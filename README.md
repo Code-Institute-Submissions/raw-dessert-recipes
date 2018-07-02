@@ -1,4 +1,4 @@
-### Cookbook
+### Raw Food Recipes
 A web application that allows users to store and easily access cooking recipies.
 
 ### Website Functionalities
@@ -34,6 +34,10 @@ A web application that allows users to store and easily access cooking recipies.
 10. **Heroku**: Used to deploy and host final project.
 11. Data-driven and can rely on structured data, unstructured data or a mix of structured and unstructured data.
 12. CRUD operations can be carried out using either SQL (e.g. MySQL/SQLite/Postgres) or NoSQL (e.g. MongoDB).
+
+
+### Resources
+1. Recipies - For purpose of populating this project used...
 
 ### Development Process
 1. **Workspace**: Blank `Cloud 9` workspace created.
