@@ -11,14 +11,14 @@ A data-driven web application that allows users to easily access and add new raw
 ### Technologies
 1. **Cloud 9**: IDE `Integrated Development Environment` used to build project end to end.
 2. **Materialize**:
-3. mLab
-4. MongoDB: NoSQL Database.
-3. **Flask**: A python microframework used to build and run the application. Flask offers beneficial functionality such as template logic, which allows the `base.html` file to be inherited on other html files via `{% extends 'base.html' %} {% block content %} {% endblock %}` code.
-4. **Python code**: Written within `run.py`. Used to write the logic of the game.
-5. **HTML files**: Used to build the structure of each application page.
-6. **Chrome Dev Tools**: Used to execute inspection of application in browser and to perform UAT, including responsive testing.
-7. **Git and GitHub**: Used for version control and to deploy a backup of the project.
-8. **Heroku**: Used to deploy and host final project.
+3. **mLab**:
+4. **MongoDB**: NoSQL Database.
+5. **Flask**: A python microframework used to build and run the application. Flask offers beneficial functionality such as template logic, which allows the `base.html` file to be inherited on other html files via `{% extends 'base.html' %} {% block content %} {% endblock %}` code.
+6. **Python code**: Written within `run.py`. Used to write the logic of the game.
+7. **HTML files**: Used to build the structure of each application page.
+8. **Chrome Dev Tools**: Used to execute inspection of application in browser and to perform UAT, including responsive testing.
+9. **Git and GitHub**: Used for version control and to deploy a backup of the project.
+10. **Heroku**: Used to deploy and host final project.
 
 ### Other Resources
 1. Recipies - For purpose of populating this project used this [Recipe Website](http://rawfoodrecipes.com/).
@@ -49,4 +49,4 @@ Responsive
 6. Select settings. Select ‘Reveal Config'. Add IP 0.0.0.0 and PORT 5000.
 7. From 'More' menu on the top right, select 'Restart all dynos'.
 8. View app: In settings, select Domain URL, NOT Git URL to view your hosted application.
-9. Deployed via Heroku: [Cookbook]().
+9. Deployed via Heroku: [Raw Food Recipes]().
