@@ -1,7 +1,7 @@
 ![Alt text](https://static1.squarespace.com/static/520ecf39e4b02291232076ce/t/54a60598e4b0970e0f0e5950/1420166568227/WebsiteRawFoodBanner.jpg?format=1500w)
 
-### Raw Food Recipes
-A data-driven web application that allows users to easily access and add new raw food recipes.
+### Raw Patisserie Recipies
+A data-driven web application that allows users to easily access and add new raw patisserie recipes.
 
 ### Functionalities
 1. User selects...
