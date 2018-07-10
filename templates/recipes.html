@@ -1,0 +1,19 @@
+<<!DOCTYPE html>
+<head>
+
+</head>
+
+<body>
+    <!-- Recipe represents each document in the collection and recipes is the collection passed back -->
+    {% for recipe in recipes %}
+    <!-- Access each key value pair within each document -->
+    {{recipe.recipe_title}}
+    {{recipe.description}}
+    {{recipe.ingredients}}
+    {{recipe.instructions}}
+    {{recipe.author_name}}
+    {{recipe.posted_date}}
+    {% endfor %}
+</body>
+
+</html>
