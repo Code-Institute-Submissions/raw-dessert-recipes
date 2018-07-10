@@ -1,9 +1,7 @@
-<<!DOCTYPE html>
-<head>
+<!-- Jinja template logic code to bring in parent template i.e. base.html -->
+{% extends 'base.html' %}
+{% block content %}
 
-</head>
-
-<body>
     <!-- Recipe represents each document in the collection and recipes is the collection passed back -->
     {% for recipe in recipes %}
     <!-- Access each key value pair within each document -->
@@ -14,6 +12,6 @@
     {{recipe.author_name}}
     {{recipe.posted_date}}
     {% endfor %}
-</body>
 
-</html>
+<!-- Jinja template logic code to close off parent template i.e. base.html -->
+{% endblock %}
