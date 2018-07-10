@@ -26,14 +26,14 @@ A data-driven web application that allows users to easily access and add new raw
 ### Development Process
 1. **Workspace**: Blank `Cloud 9` workspace created.
 2. **README.md**: Created with outline of the project and developed as project progressed.
-3. **Files & Folders**:
-3. **mLab**: Created the MongoDB database. Share details of how you created.
-3. **Folders and files**: Created in line with wireframe and developed as project progressed.
-4. **Materialize**:
-5. **HTML files**:
-6. **App.py**:
-7. **Commentary**: Developed throughout files to provide code guidance.
-8. **Cloud 9 Linux Terminal**: Used to backup project via incremental `git status, git add <file/s> (staging area), git commit -m "<commentary>"` commands.
+3. **Files & Folders**: Created in line with wireframe and developed as project progressed.
+4. **mLab**: Created the MongoDB database. Share details of how you created.
+ Flask: sudo pip3 install flask
+5. **Materialize**:
+6. **HTML files**:
+7. **App.py**:
+8. **Commentary**: Developed throughout files to provide code guidance.
+9. **Cloud 9 Linux Terminal**: Used to backup project via incremental `git status, git add <file/s> (staging area), git commit -m "<commentary>"` commands.
 
 ### Testing
 **Manual testing**, ongoing via `Cloud 9`, `Run`. Once each functionality coded, checked application operating as expected in web browser by walking through each functionality. Testing included the following:
