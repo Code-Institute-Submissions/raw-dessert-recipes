@@ -1,7 +1,5 @@
-![Alt text](https://static1.squarespace.com/static/520ecf39e4b02291232076ce/t/54a60598e4b0970e0f0e5950/1420166568227/WebsiteRawFoodBanner.jpg?format=1500w)
-
-### Raw Patisserie Recipies
-A data-driven web application that allows users to easily access and add new raw patisserie recipes.
+### Raw Chocolate Recipies
+A data-driven web application that allows users to easily access and add new recipes.
 
 ### Functionalities
 1. User selects...
@@ -28,7 +26,7 @@ A data-driven web application that allows users to easily access and add new raw
 2. **README.md**: Created with outline of the project and developed as project progressed.
 3. **Files & Folders**: Created in line with wireframe and developed as project progressed.
 4. **mLab**: Created the MongoDB database. Share details of how you created.
- Flask: sudo pip3 install flask
+Flask - sudo pip3 install flask
 App.py - set up for Flask
 Heroku - create app to host project
 5. **Materialize**:
