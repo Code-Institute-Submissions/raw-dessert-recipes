@@ -29,6 +29,8 @@ A data-driven web application that allows users to easily access and add new raw
 3. **Files & Folders**: Created in line with wireframe and developed as project progressed.
 4. **mLab**: Created the MongoDB database. Share details of how you created.
  Flask: sudo pip3 install flask
+App.py - set up for Flask
+Heroku - create app to host project
 5. **Materialize**:
 6. **HTML files**:
 7. **App.py**:
