@@ -7,15 +7,35 @@
 <div class="row">
     <form action="" method="POST" class="col s12">
         <div class="row">
-            <div class="input-field col s6">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="icon-prefix" type="text" class="validate">
-                <label for="icon-prefix">First Name</label>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">assignment</i>
+                <input id="recipe_title" name="recipe_title" type="text">
+                <label for="icon-prefix">Recipe Title</label>
             </div>
-            <div class="input-field col s6">
-                <i class="material-icons prefix">phone</i>
-                <input id="icon-telephone" type="tel" class="validate">
-                <label for="icon-telephone">Telephone</label>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">description</i>
+                <textarea name="description" id="description" class="materialize-textarea"></textarea>
+                <label for="icon-prefix">Description</label>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">format_list_bulleted</i>
+                <textarea name="ingredients" id="ingredients" class="materialize-textarea"></textarea>
+                <label for="icon-prefix">Ingredients</label>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">format_list_numbered</i>
+                <textarea name="instructions" id="instructions" class="materialize-textarea"></textarea>
+                <label for="icon-prefix">Instructions</label>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">person</i>
+                <input id="author_name" name="author_name" type="text">
+                <label for="icon-prefix">Author</label>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">today</i>
+                <input id="date_posted" name="date_posted" type="text" class="datepicker">
+                <label for="icon-prefix">Date Posted</label>
             </div>
         </div>
     </form>
