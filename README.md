@@ -30,7 +30,7 @@ Flask - sudo pip3 install flask
 App.py - set up for Flask
 Heroku - create app to host project
 5. **Materialize**: Add links to import library
-6. **HTML files**:
+6. **HTML files**: Build code
 7. **App.py**:
 8. **Commentary**: Developed throughout files to provide code guidance.
 9. **Cloud 9 Linux Terminal**: Used to backup project via incremental `git status, git add <file/s> (staging area), git commit -m "<commentary>"` commands.
