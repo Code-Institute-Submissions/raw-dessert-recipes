@@ -1,0 +1,25 @@
+<!-- Jinja child template inheritance code to open parent template. -->
+{% extends 'base.html' %} {% block content %}
+
+<h3>Add New Recipe</h3>
+
+<!-- Form -->
+<div class="row">
+    <form action="" method="POST" class="col s12">
+        <div class="row">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon-prefix" type="text" class="validate">
+                <label for="icon-prefix">First Name</label>
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">phone</i>
+                <input id="icon-telephone" type="tel" class="validate">
+                <label for="icon-telephone">Telephone</label>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Jinja template logic code to end parent template. -->
+{% endblock %}
