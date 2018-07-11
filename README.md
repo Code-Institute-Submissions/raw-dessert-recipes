@@ -29,7 +29,7 @@ A data-driven web application that allows users to easily access and add new rec
 Flask - sudo pip3 install flask
 App.py - set up for Flask
 Heroku - create app to host project
-5. **Materialize**:
+5. **Materialize**: Add links to import library
 6. **HTML files**:
 7. **App.py**:
 8. **Commentary**: Developed throughout files to provide code guidance.

@@ -11,10 +11,12 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/get_recipes')
 def get_recipes():
+    '''Routing view to render/call recipes.html in browser.'''
     return render_template("recipes.html",
     recipes=mongo.db.recipes.find())
     
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
     port=int(os.environ.get('PORT')),
+    #If debug=True not included, changes will not render in the browser.
     debug=True)

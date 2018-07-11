@@ -1,10 +1,10 @@
-<!-- Jinja template logic code to bring in parent template i.e. base.html -->
+<!-- Jinja child template inheritance code to open parent template. -->
 {% extends 'base.html' %}
 {% block content %}
 
-    <!-- Recipe represents each document in the collection and recipes is the collection passed back -->
+    <!-- Recipe represents each document in the collection and recipes is the collection passed back. -->
     {% for recipe in recipes %}
-    <!-- Access each key value pair within each document -->
+    <!-- Access each key value pair within each document. -->
     {{recipe.recipe_title}}
     {{recipe.description}}
     {{recipe.ingredients}}
@@ -13,5 +13,5 @@
     {{recipe.posted_date}}
     {% endfor %}
 
-<!-- Jinja template logic code to close off parent template i.e. base.html -->
+<!-- Jinja template logic code to end parent template. -->
 {% endblock %}

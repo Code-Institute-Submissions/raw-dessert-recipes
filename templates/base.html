@@ -1,12 +1,24 @@
 <<!DOCTYPE html>
-<head>
 
-</head>
+    <head>
+        <!-- Import Google Icon Font library. -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Import Materialize CSS library. -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        
+        <!-- Link to custom css file. -->
+        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+    </head>
 
-<body>
-    <h1>Parent Template</h1>
-    {% block content %}
-    {% endblock %}
-</body>
+    <body>
+        <h1>Parent Template</h1>
+        
+        <!-- Jinja parent template inheritance code. -->
+        {% block content %} {% endblock %}
 
-</html>
+        <!-- Import Materialize JS library. -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    </body>
+
+    </html>
