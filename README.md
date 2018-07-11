@@ -39,6 +39,7 @@ Heroku - create app to host project
 **Manual testing**, ongoing via `Cloud 9`, `Run`. Once each functionality coded, checked application operating as expected in web browser by walking through each functionality. Testing included the following:
 
  recipies.html - jinja error rendering {{ endfor }}, should be  {% endfor %}
+ app.py = application not rendering in browser. @app.route('add_recipe') should be @app.route('/add_recipe') '/' missing.
 
 Responsive
 
