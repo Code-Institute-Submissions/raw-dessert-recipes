@@ -15,7 +15,7 @@ def get_recipes():
     return render_template("recipes.html",
     recipes=mongo.db.recipes.find())
     
-@app.route('add_recipe')
+@app.route('/add_recipe')
 def add_recipe():
     '''Routing view to render/call addrecipe.html in browser.'''
     return render_template('addrecipe.html')
