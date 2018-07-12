@@ -1,49 +1,46 @@
 <!-- Jinja child template inheritance code to open parent template. -->
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html'%} {% block content %}
 
-<ul class="collapsible popout">
-    <!-- Recipe represents each document in the collection and recipes is the collection passed back. -->
-    {% for recipe in recipes %}
-
-    <li>
-        <div class="collapsible-header">
-            <div class="col s9">
-                <i class="material-icons">arrow_drop_down</i> <strong>{{recipe.recipe_title}}</div></strong>
+<div class="row">
+    <ul class="collapsible popout">
+        <!-- Recipe represents each document in the collection and recipes is the collection passed back. -->
+        {% for recipe in recipes %}
+        <li>
+            <div class="collapsible-header">
+                <div class="col s12">
+                    <i class="material-icons">arrow_drop_down</i>
+                    <strong>{{recipe.recipe_title}}</strong>
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date Posted: </strong>{{recipe.posted_date}}
+                </div>
             </div>
-        </div>
-        <div class="collapsible-body">
-            <span>
+
+            <div class="collapsible-body">
+                <span>
                 <h6><strong>Description</strong></h6>
             <!-- Access key value pair within each document, in database. -->
               {{recipe.description}}  
             </span>
-        </div>
-        <div class="collapsible-body">
-            <span>
+            </div>
+            <div class="collapsible-body">
+                <span>
                 <h6><strong>Ingredients</strong></h6>
               {{recipe.ingredients}}  
             </span>
-        </div>
-        <div class="collapsible-body">
-            <span>
+            </div>
+            <div class="collapsible-body">
+                <span>
                 <h6><strong>Instructions</strong></h6>
               {{recipe.instructions}}  
             </span>
-        </div>
-        <div class="collapsible-body">
-            <span>
+            </div>
+            <div class="collapsible-body">
+                <span>
               <h6><strong>Author: </strong>{{recipe.author_name}}</h6> 
             </span>
-        </div>
-        <div class="collapsible-body">
-            <span>
-              <h6><strong>Date Posted: </strong>{{recipe.posted_date}}</h6> 
-            </span>
-        </div>
-    </li>
-    {% endfor %}
-
-</ul>
-
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 <!-- Jinja template logic code to end parent template. -->
 {% endblock %}

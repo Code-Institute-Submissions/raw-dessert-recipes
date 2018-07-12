@@ -63,6 +63,3 @@ Alpha sort recipies
 Add search, pagination, number of views, upvotes/likes, etc & statistics
 Spellcheck
 E2E commentary
-
-
-
