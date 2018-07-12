@@ -1,51 +1,51 @@
 <!-- Jinja child template inheritance code to open parent template. -->
 {% extends 'base.html' %} {% block content %}
 
-<h4>Update Recipe</45>
+<div class="row">
+    <h4>Edit Recipe</h4>
+</div>
 
-    <!-- Form -->
-    <div class="row">
-        <form action="{{ url_for('insert_recipe') }}" method="POST" class="col s12">
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">assignment</i>
-                    <input id="recipe_title" name="recipe_title" type="text">
-                    <label for="icon-prefix">Recipe Title</label>
-                </div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">today</i>
-                    <input id="date_posted" name="date_posted" type="text" class="datepicker">
-                    <label for="icon-prefix">Date Posted</label>
-                </div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">description</i>
-                    <input id="description" name="description" type="text">
-                    <label for="icon-prefix">Description</label>
-                </div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">format_list_bulleted</i>
-                    <textarea name="ingredients" id="ingredients" class="materialize-textarea"></textarea>
-                    <label for="icon-prefix">Ingredients</label>
-                </div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">format_list_numbered</i>
-                    <textarea name="instructions" id="instructions" class="materialize-textarea"></textarea>
-                    <label for="icon-prefix">Instructions</label>
-                </div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">person</i>
-                    <input id="author_name" name="author_name" type="text">
-                    <label for="icon-prefix">Author</label>
-                </div>
+<!-- Form -->
+<div class="row">
+    <form action="{{ url_for('insert_recipe') }}" method="POST" class="col s12">
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">assignment</i>
+                <input id="recipe_title" name="recipe_title" type="text">
+                <label for="icon-prefix">Recipe Title</label>
             </div>
-            <div class="row">
-                <button class="btn waves-effect black" type="submit" name="action">Add Recipe
+            <div class="input-field col s12">
+                <i class="material-icons prefix">today</i>
+                <input id="date_posted" name="date_posted" type="text" class="datepicker">
+                <label for="icon-prefix">Date Posted</label>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">description</i>
+                <input id="description" name="description" type="text">
+                <label for="icon-prefix">Description</label>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">format_list_bulleted</i>
+                <textarea name="ingredients" id="ingredients" class="materialize-textarea"></textarea>
+                <label for="icon-prefix">Ingredients</label>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">format_list_numbered</i>
+                <textarea name="instructions" id="instructions" class="materialize-textarea"></textarea>
+                <label for="icon-prefix">Instructions</label>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">person</i>
+                <input id="author_name" name="author_name" type="text">
+                <label for="icon-prefix">Author</label>
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn waves-effect black" type="submit" name="action">Add Recipe
                 <i class="material-icons right">playlist_add</i>
              </button>
-            </div>
-        </form>
-    </div>
-    <!-- Jinja template logic code to end parent template. -->
-    {% endblock %}
-
-
+        </div>
+    </form>
+</div>
+<!-- Jinja template logic code to end parent template. -->
+{% endblock %}

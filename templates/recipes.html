@@ -2,6 +2,10 @@
 {% extends 'base.html'%} {% block content %}
 
 <div class="row">
+    <h4>Raw Dessert Recipes</h4>
+</div>
+
+<div class="row">
     <ul class="collapsible popout">
         <!-- Recipe represents each document in the collection and recipes is the collection passed back. -->
         {% for recipe in recipes %}
@@ -9,15 +13,16 @@
             <div class="collapsible-header">
                 <div class="col s12">
                     <i class="material-icons">arrow_drop_down</i>
+                    <font size="4">
                     <strong>{{recipe.recipe_title}}</strong>
-                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date Posted: </strong>{{recipe.posted_date}}
+                    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Posted: </strong>{{recipe.posted_date}}
+                    </font>
                 </div>
-                <div class="col s4">
-                    <a href="{{url_for('edit_recipe', recipe_id=recipe._id)}}" class="waves-effect waves-light btn btn_small black">Update</a>
+                <div class="col s3">
+                    <a href="{{url_for('edit_recipe', recipe_id=recipe._id)}}" class="waves-effect waves-light btn btn_small black">Edit</a>
                     <a href="{{url_for('edit_recipe', recipe_id=recipe._id)}}" class="waves-effect waves-light btn btn_small red">Delete</a>
                 </div>
             </div>
-
             <div class="collapsible-body">
                 <span>
                 <h6><strong>Description</strong></h6>
@@ -48,3 +53,6 @@
 </div>
 <!-- Jinja template logic code to end parent template. -->
 {% endblock %}
+
+
+

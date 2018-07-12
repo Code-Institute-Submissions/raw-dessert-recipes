@@ -1,4 +1,4 @@
-### Raw Chocolate Recipies
+### Raw Dessert Recipes
 A data-driven web application that allows users to easily access and add new recipes.
 
 ### Functionalities
