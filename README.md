@@ -38,9 +38,12 @@ Heroku - create app to host project
 ### Testing
 **Manual testing**, ongoing via `Cloud 9`, `Run`. Once each functionality coded, checked application operating as expected in web browser by walking through each functionality. Testing included the following:
 
- recipies.html - jinja error rendering {{ endfor }}, should be  {% endfor %}
+ recipies.html - jinja error rendering {{ endfor }}, should be  {% endfor %}.
  app.py - application not rendering in browser. @app.route('add_recipe') should be @app.route('/add_recipe') '/' missing.
- jinja error - (edit_recipe spelled incorrectly)
+ jinja error - (edit_recipe spelled incorrectly).
+ Add Recipie/Edit Recipe - Date being input into field but not posted to front end. {{recipe.posted_date}} should have been {{recipe.date_posted}}.
+ MongoDB manually input recipies, date blank - after previous bug was fixed, wording on MOngo DB has to be updated fom posted_date to date_posted to correctly align all code.
+ DAte Posted not appearing under edit task - added sript to editrecipe.html. #Date, bug - should be #date_posted.
 
 Responsive
 
