@@ -9,28 +9,13 @@
     <!-- Link to custom css file. -->
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
 
-    <!-- CSS includede within html file, when included within style.css won't override Materialize CSS -->
-    <style>
-        .centered {
-            position: absolute;
-            top: 35%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-            font-weight: 700;
-            font-size: 65px;
-            font-style: italic;
-        }
-    </style>
-
 </head>
 
 <body>
     <header>
         <nav class="black">
             <div class="nav-wrapper">
-                <a href="{{url_for('get_recipes')}}" class="brand-logo">Raw Chocolate Recipes</a>
+                <a href="{{url_for('get_recipes')}}" class="brand-logo">Raw Chocolate</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="{{url_for('get_recipes')}}">Recipes</a></li>
@@ -46,8 +31,7 @@
     </header>
 
     <div>
-        <img src="/static/images/rawchocolate.jpg" alt="Raw Chocolate" height="500" width="2000" ">
-        <div class="centered">Enjoy raw chocolate. It's a superfood with powerful antioxidant benefits.</div>
+        <img src="/static/images/rawchocolate.jpg" alt="Raw Chocolate" height="250" width="2000" ">
     </div>
 
     <!-- Jinja parent template inheritance code. -->
