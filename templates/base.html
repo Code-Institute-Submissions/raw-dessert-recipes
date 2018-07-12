@@ -14,7 +14,7 @@
     <header>
         <nav class="black">
             <div class="nav-wrapper">
-                <a href="{{url_for('get_recipes')}}" class="brand-logo">Raw Desserts</a>
+                <a href="{{url_for('get_recipes')}}" class="brand-logo">Raw Dessert Recipes</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="{{url_for('get_recipes')}}">Recipes</a></li>
@@ -27,9 +27,11 @@
             </div>
         </nav>
     </header>
-    <img src="/static/images/rawchocolate.jpg" alt="Raw Chocolate" height="250" width="2000">
-    <!-- Jinja parent template inheritance code. -->
 
+    <div class="bg"></div>
+
+
+    <!-- Jinja parent template inheritance code. -->
     <div class="container">
         {% block content %} {% endblock %}
     </div>
