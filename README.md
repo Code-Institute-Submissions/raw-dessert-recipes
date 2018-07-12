@@ -57,13 +57,3 @@ Responsive
 7. From 'More' menu on the top right, select 'Restart all dynos'.
 8. View app: In settings, select Domain URL, NOT Git URL to view your hosted application.
 9. Deployed via Heroku: [Raw Chocolate Recipes]().
-10. 
-
-
-Notes:
-Ingredients - bullet point
-Instructions - numbered
-Alpha sort recipies
-Add search, pagination, number of views, upvotes/likes, etc & statistics
-Spellcheck
-E2E commentary
