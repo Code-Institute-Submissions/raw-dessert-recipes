@@ -21,6 +21,13 @@ def add_recipe():
     '''Routing view to render/call addrecipe.html in browser.'''
     return render_template('addrecipe.html')
     
+@app.route('/insert_recipe', methods=['POST'])
+def insert_recipe():
+    '''Routing view to add new recipe in browser.'''
+    recipes =  mongo.db.recipes
+    recipes.insert_one(request.form.to_dict())
+    return redirect(url_for('get_recipes'))
+    
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
     port=int(os.environ.get('PORT')),
