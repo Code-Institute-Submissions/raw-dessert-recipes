@@ -53,6 +53,8 @@ A data-driven web application that allows users to easily access, add new and ed
     2. **Bug/Expected Output** - Date posted not appearing. **Issue** - Script bug, written as #Date_posted. **Fix** - Updated to #date_posted.
 4. **Responsive Testing**: Used Chrome Dev tools to inspect application on various device sizes.
     1. **Bug/Expected Output** - Background image not responsive. **Issue** - Includede as a div with static width and height html. **Fix ** - Updated as div with css 'bg' class. Added css styling for responsive image.
+5. **Heroku Testing**: Tested to ensure application successfully hosted.
+    1. **Bug/Expected Output** - Appplication error, not rendering in browser. **Issue** - Requirements.txt not updated posted pymongo installation. **Fix** - Checekd app log within Heroku for error messages. Ran sudo pip3 freeze --local > requirements.txt and pushed to Heroku. 
 
 ### Deploy via Heroku
 1. Via Linux Terminal, login to Heroku, using 'heroku login' command. Input Heroku login details.
@@ -63,4 +65,4 @@ A data-driven web application that allows users to easily access, add new and ed
 6. Select settings. Select ‘Reveal Config'. Add IP 0.0.0.0 and PORT 5000.
 7. From 'More' menu on the top right, select 'Restart all dynos'.
 8. View app: In settings, select Domain URL, NOT Git URL to view your hosted application.
-9. Deployed via Heroku: [Raw Chocolate Recipes]().
+9. Deployed via Heroku: [Raw Chocolate Recipes](https://cookbook-mongodb.herokuapp.com/).
