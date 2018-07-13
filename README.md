@@ -1,5 +1,5 @@
 ### Raw Dessert Recipes
-A data-driven web application that allows users to easily access and add new recipes.
+A data-driven web application that allows users to easily access, add new and edit recipes.
 
 ### Functionalities
 1. **Recipes (homepage)**
@@ -21,21 +21,23 @@ A data-driven web application that allows users to easily access and add new rec
 9. **Heroku**: Used to deploy and host the project.
 
 ### Other Resources
-1. Recipies - For purpose of populating this project used this [Recipe Website](http://rawfoodrecipes.com/).
+1. **Recipie details**: For purpose of populating this project used this [Recipe Website](http://rawfoodrecipes.com/).
 
 ### Development Process
 1. **Workspace**: Blank `Cloud 9` workspace created.
-2. **README.md**: Created with outline of the project and developed as project progressed.
+2. **README.md**: Created with outline of the project. Developed and finalised as project progressed.
 3. **Files & Folders**: Created in line with wireframe and developed as project progressed.
-4. **mLab**: Created the MongoDB database. Share details of how you created.
-Flask - sudo pip3 install flask
-App.py - set up for Flask
-Heroku - create app to host project
-5. **Materialize**: Add links to import library
-6. **HTML files**: Build code
-7. **App.py**:
-8. **Commentary**: Developed throughout files to provide code guidance.
-9. **Cloud 9 Linux Terminal**: Used to backup project via incremental `git status, git add <file/s> (staging area), git commit -m "<commentary>"` commands.
+4. **mLab**: Before building Cloud 9 code, first created the MongoDB database.
+    * **New DB:** Created new database, selecting AWS Sandbox with 0.5GB free storage.
+    * **DB Schema:** Created new collection i.e. document, which represents a recipe. Within each document created key value pairs per wireframe, e.g. "recipe_title": "Raw Chocolate Buttons". Saved a couple of new recipes to link flask to whilst building project. Each new recipe created on the front end would then save as a document under collections,
+    * **User:** Create admin user and added relevant mongodb code to app.py to connect application with database.
+5. **Flask**: Installed Flask via sudo pip3 install flask command.
+6. **App.py**: Developed code to run flask and added code throughout build to render html files in browser.
+7. **Materialize**: Developed relevant links within html files to import libraries.
+8. **HTML files**: Developed code to build structure of each web application page.
+9. **CSS file**: Developed code to add own custom styling.
+10. **Commentary**: Developed throughout to provide code guidance.
+11. **Cloud 9 Linux Terminal**: Used to backup project via incremental `git status, git add <file/s> (staging area), git commit -m "<commentary>"` commands.
 
 ### Testing
 **Manual testing**, ongoing via `Cloud 9`, `Run`. Once each functionality coded, checked application operating as expected in web browser by walking through each functionality. Testing included the following:
