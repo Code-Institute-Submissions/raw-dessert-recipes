@@ -52,7 +52,7 @@ A data-driven web application that allows users to easily access, add new and ed
     1. **Bug/Expected Output** - Application not rendering in browser. **Issue** - spelled @app.route('/eit_recipe/<recipe_id>') **Fix** - spelled @app.route('/edit_recipe/<recipe_id>').
     2. **Bug/Expected Output** - Date posted not appearing. **Issue** - Script bug, written as #Date_posted. **Fix** - Updated to #date_posted.
 4. **Responsive Testing**: Used Chrome Dev tools to inspect application on various device sizes.
-    1. **Bug/Expected Output** - Background image not responsive. **Issue** - Included as a div with static width and height html. **Fix ** - Updated as div with css 'bg' class. Added css styling for responsive image.
+    1. **Bug/Expected Output** - Background image not responsive. **Issue** - Included as a div with static width and height html. **Fix** - Updated as div with css 'bg' class. Added css styling for responsive image.
 5. **Heroku Testing**: Tested to ensure application successfully hosted.
     1. **Bug/Expected Output** - Application error, not rendering in browser. **Issue** - Requirements.txt not updated posted pymongo installation. **Fix** - Checked app log within Heroku for error messages. Ran sudo pip3 freeze --local > requirements.txt and pushed to Heroku. 
 
