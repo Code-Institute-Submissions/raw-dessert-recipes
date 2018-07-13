@@ -21,7 +21,7 @@ A data-driven web application that allows users to easily access, add new and ed
 9. **Heroku**: Used to deploy and host the project.
 
 ### Other Resources
-1. **Recipe details**: For purpose of populating this project used this [Recipe Website](http://rawfoodrecipes.com/).
+1. **Recipe details**: For the purpose of populating this project used this [Recipe Website](http://rawfoodrecipes.com/).
 
 ### Development Process
 1. **Workspace**: Blank `Cloud 9` workspace created.
@@ -33,10 +33,10 @@ A data-driven web application that allows users to easily access, add new and ed
     * **User:** Create admin user and added relevant mongoDB code to app.py to connect application with database.
 5. **Flask**: Installed Flask via sudo pip3 install flask command.
 6. **App.py**: Developed code to run flask and added code throughout build to render html files in browser.
-7. **Materialize**: Developed relevant links within html files to import libraries.
-8. **HTML files**: Developed code to build structure of each web application page.
-9. **CSS file**: Developed code to add own custom styling.
-10. **Commentary**: Developed throughout to provide code guidance.
+7. **Materialize**: Developed code to include relevant Materialize links within html files to import libraries.
+8. **HTML files**: Developed HTML code to build structure of each web application page.
+9. **CSS file**: Developed CSS code to add own custom styling.
+10. **Commentary**: Developed commentary throughout to provide code guidance.
 11. **Cloud 9 Linux Terminal**: Used to backup project via incremental `git status, git add <file/s> (staging area), git commit -m "<commentary>"` commands.
 
 ### Testing
@@ -65,4 +65,4 @@ A data-driven web application that allows users to easily access, add new and ed
 6. Select settings. Select ‘Reveal Config'. Add IP 0.0.0.0 and PORT 5000.
 7. From 'More' menu on the top right, select 'Restart all dynos'.
 8. View app: In settings, select Domain URL, NOT Git URL to view your hosted application.
-9. Deployed via Heroku: [Raw Chocolate Recipes](https://cookbook-mongodb.herokuapp.com/).
+9. Deployed via Heroku: [Raw Dessert Recipes](https://cookbook-mongodb.herokuapp.com/).
