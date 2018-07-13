@@ -2,27 +2,23 @@
 A data-driven web application that allows users to easily access and add new recipes.
 
 ### Functionalities
-##### Recipes homepage
-
-
-
-
-
-1. User selects...
-2. User selects...
-3. User selects...
+1. **Recipes (homepage)**
+    * **Recipes**: User selects the drop down arrow, which displays recipe details in an accordion popout style.
+    * **Edit Button**: User selects the edit button to update/make changes to the recipe. The recipe with all details opens in an edit recipe page and includes the recipe details. The user make changes and adds a new version of the recipe by selecting the edit recipe button.
+    * **Delete Button:** User selects the delete button to remove a recipe.
+2. **New Recipes**
+    * **New Recipes**: User selects new recipes on the navbar to open the new recipe page. User inputs recipe details and selects add recipe button to add the recipe.
 
 ### Technologies
 1. **Cloud 9**: IDE `Integrated Development Environment` used to build project end to end.
-2. **Materialize**:
-3. **mLab**:
-4. **MongoDB**: NoSQL Database.
-5. **Flask**: A python microframework used to build and run the application. Flask offers beneficial functionality such as template logic, which allows the `base.html` file to be inherited on other html files via `{% extends 'base.html' %} {% block content %} {% endblock %}` code.
-6. **Python code**: Written within `run.py`. Used to write the logic of the game.
-7. **HTML files**: Used to build the structure of each application page.
-8. **Chrome Dev Tools**: Used to execute inspection of application in browser and to perform UAT, including responsive testing.
-9. **Git and GitHub**: Used for version control and to deploy a backup of the project.
-10. **Heroku**: Used to deploy and host final project.
+2. **Materialize**: A web design library created by Google. Used for styling and interactive design, e.g. Buttons, Forms, Icons.
+3. **mLab**: Cloud database service that hosts MongoDB databases. Used for creating and storing recipe data.
+4. **Flask**: A python microframework used to build and run the application. Flask offers beneficial functionality such as template logic, which allows the `base.html` file to be inherited on other html files via `{% extends 'base.html' %} {% block content %} {% endblock %}` code.
+5. **Python code**: Written within `app.py`. Used to write the logic of creating, reading, updating and deleting recipes.
+6. **HTML files**: Used to build the structure of each application page.
+7. **Chrome Dev Tools**: Used to execute inspection of application in browser and to perform UAT, including responsive testing.
+8. **Git and GitHub**: Used for version control and to deploy a backup of the project.
+9. **Heroku**: Used to deploy and host the project.
 
 ### Other Resources
 1. Recipies - For purpose of populating this project used this [Recipe Website](http://rawfoodrecipes.com/).
