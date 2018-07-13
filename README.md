@@ -3,7 +3,7 @@ A data-driven web application that allows users to easily access, add new and ed
 
 ### Functionalities
 1. **Recipes (homepage)**
-    * **Recipes**: User selects the drop down arrow, which displays recipe details in an accordion popout style.
+    * **Recipes**: User selects the drop-down arrow, which displays recipe details in an accordion popout style.
     * **Edit Button**: User selects the edit button to update/make changes to the recipe. The recipe with all details opens in an edit recipe page and includes the recipe details. The user make changes and adds a new version of the recipe by selecting the edit recipe button.
     * **Delete Button:** User selects the delete button to remove a recipe.
 2. **New Recipes**
@@ -21,7 +21,7 @@ A data-driven web application that allows users to easily access, add new and ed
 9. **Heroku**: Used to deploy and host the project.
 
 ### Other Resources
-1. **Recipie details**: For purpose of populating this project used this [Recipe Website](http://rawfoodrecipes.com/).
+1. **Recipe details**: For purpose of populating this project used this [Recipe Website](http://rawfoodrecipes.com/).
 
 ### Development Process
 1. **Workspace**: Blank `Cloud 9` workspace created.
@@ -30,7 +30,7 @@ A data-driven web application that allows users to easily access, add new and ed
 4. **mLab**: Before building Cloud 9 code, first created the MongoDB database.
     * **New DB:** Created new database, selecting AWS Sandbox with 0.5GB free storage.
     * **DB Schema:** Created new collection i.e. document, which represents a recipe. Within each document created key value pairs per wireframe, e.g. "recipe_title": "Raw Chocolate Buttons". Saved a couple of new recipes to link flask to whilst building project. Each new recipe created on the front end would then save as a document under collections,
-    * **User:** Create admin user and added relevant mongodb code to app.py to connect application with database.
+    * **User:** Create admin user and added relevant mongoDB code to app.py to connect application with database.
 5. **Flask**: Installed Flask via sudo pip3 install flask command.
 6. **App.py**: Developed code to run flask and added code throughout build to render html files in browser.
 7. **Materialize**: Developed relevant links within html files to import libraries.
@@ -45,19 +45,19 @@ A data-driven web application that allows users to easily access, add new and ed
 1. **Recipes.html**
     1. **Bug/Expected Output** - Application not rendering in browser. **Issue** - spelled {{ endfor }}. **Fix** - Scanned code. Updated jinja code to {% endfor %}.
     2. **Bug/Expected Output** - Application not rendering in browser. **Issue** - app.py '@app.route('add_recipe')'. **Fix** - Added missing '/', to '@app.route('/add_recipe')'.
-    3. **Bug/Expected Output** - Date posted not appearing after selecting edit. **Issue** - Wording for key value within mongodb not in line with application. **Fix** Updated from 'posted_date' to 'date_posted' to correctly align all code.
+    3. **Bug/Expected Output** - Date posted not appearing after selecting edit. **Issue** - Wording for key value within mongoDB not in line with application. **Fix** Updated from 'posted_date' to 'date_posted' to correctly align all code.
 2. **Addrecipe.html**
     1. **Bug/Expected Output** - Date posted populating on form but not showing when recipe added. **Issue** - Spelled {{recipe.posted_date}} **Fix** - {{recipe.date_posted}}, words wrong way around.
 3. **Editrecipe.html**
     1. **Bug/Expected Output** - Application not rendering in browser. **Issue** - spelled @app.route('/eit_recipe/<recipe_id>') **Fix** - spelled @app.route('/edit_recipe/<recipe_id>').
     2. **Bug/Expected Output** - Date posted not appearing. **Issue** - Script bug, written as #Date_posted. **Fix** - Updated to #date_posted.
 4. **Responsive Testing**: Used Chrome Dev tools to inspect application on various device sizes.
-    1. **Bug/Expected Output** - Background image not responsive. **Issue** - Includede as a div with static width and height html. **Fix ** - Updated as div with css 'bg' class. Added css styling for responsive image.
+    1. **Bug/Expected Output** - Background image not responsive. **Issue** - Included as a div with static width and height html. **Fix ** - Updated as div with css 'bg' class. Added css styling for responsive image.
 5. **Heroku Testing**: Tested to ensure application successfully hosted.
-    1. **Bug/Expected Output** - Appplication error, not rendering in browser. **Issue** - Requirements.txt not updated posted pymongo installation. **Fix** - Checekd app log within Heroku for error messages. Ran sudo pip3 freeze --local > requirements.txt and pushed to Heroku. 
+    1. **Bug/Expected Output** - Application error, not rendering in browser. **Issue** - Requirements.txt not updated posted pymongo installation. **Fix** - Checked app log within Heroku for error messages. Ran sudo pip3 freeze --local > requirements.txt and pushed to Heroku. 
 
 ### Deploy via Heroku
-1. Via Linux Terminal, login to Heroku, using 'heroku login' command. Input Heroku login details.
+1. Via Linux Terminal, login to Heroku, using 'Heroku login' command. Input Heroku login details.
 2. Create new Heroku app, using 'heroku apps:create appname' command.
 3. Push project to Heroku, using 'push -u heroku master' command.
 4. Create scale, using 'heroku ps:scale web=1' command.
