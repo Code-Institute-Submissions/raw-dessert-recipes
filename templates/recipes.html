@@ -1,4 +1,4 @@
-<!-- Jinja child template inheritance code to open parent template. -->
+<!-- Jinja child template, inheritance code to parent template, base.html. -->
 {% extends 'base.html'%} {% block content %}
 
 <div class="row">
@@ -7,7 +7,7 @@
 
 <div class="row">
     <ul class="collapsible popout">
-        <!-- Recipe represents each document in the collection and recipes is the collection passed back. -->
+        <!-- 'Recipe' represents each mongodb document in the collection and 'recipes' is the collection passed back. -->
         {% for recipe in recipes %}
         <li>
             <div class="collapsible-header">
@@ -26,7 +26,7 @@
             <div class="collapsible-body">
                 <span>
                 <h6><strong>Description</strong></h6>
-            <!-- Access key value pair within each document, in database. -->
+            <!-- Access key value pair within each mongodb document. -->
               {{recipe.description}}  
             </span>
             </div>
@@ -50,9 +50,6 @@
         </li>
         {% endfor %}
     </ul>
-
-
-
 </div>
-<!-- Jinja template logic code to end parent template. -->
+<!-- Jinja child template, inheritance code to parent template, base.html. -->
 {% endblock %}

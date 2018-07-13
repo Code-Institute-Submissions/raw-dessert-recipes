@@ -1,3 +1,4 @@
+/* Edit and Delete buttons */
 .btn_small {
     height: 24px;
     width: 75px;
@@ -6,19 +7,21 @@
     padding: 0 0.5em;
 }
 
+
+/* Background image */
 body, html {
     height: 100%;
     margin: 0;
 }
 
 .bg {
-    /* The image used */
+    /* Image */
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSrDu9mruGaw7T1Ksvd-JgS6lTyRD9xj4l6stm95Mjzy6N3nM-");
    
     /* Height */
     height: 25%; 
 
-    /* Center and scale the image nicely */
+    /* Center and scale the image */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

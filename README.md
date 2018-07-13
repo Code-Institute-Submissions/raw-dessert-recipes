@@ -2,6 +2,12 @@
 A data-driven web application that allows users to easily access and add new recipes.
 
 ### Functionalities
+##### Recipes homepage
+
+
+
+
+
 1. User selects...
 2. User selects...
 3. User selects...
