@@ -47,6 +47,8 @@ A data-driven web application that allows users to easily access, add new and ed
     1. **Bug/Expected Output** - Application not rendering in browser. **Issue** - spelled {{ endfor }}. **Fix** - Scanned code. Updated jinja code to {% endfor %}.
     2. **Bug/Expected Output** - Application not rendering in browser. **Issue** - app.py '@app.route('add_recipe')'. **Fix** - Added missing '/', to '@app.route('/add_recipe')'.
     3. **Bug/Expected Output** - Date posted not appearing after selecting edit. **Issue** - Wording for key value within mongoDB not in line with application. **Fix** Updated from 'posted_date' to 'date_posted' to correctly align all code.
+    4. **Bug/Expected Output** - When user selects like button on one recipe, the same rating is applied to all recipes. **Issue** - [OPEN AND UNRESOLVED BUG].
+
 2. **Addrecipe.html**
     1. **Bug/Expected Output** - Date posted populating on form but not showing when recipe added. **Issue** - Spelled {{recipe.posted_date}} **Fix** - {{recipe.date_posted}}, words wrong way around.
 3. **Editrecipe.html**
