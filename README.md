@@ -33,7 +33,8 @@ A data-driven web application that allows users to easily access, add new and ed
     * **User:** Create admin user and added relevant mongoDB code to app.py to connect application with database.
 5. **Flask**: Installed Flask via sudo pip3 install flask command.
 6. **App.py**: Developed code to run flask and added code throughout build to render html files in browser.
-7. **Materialize**: Developed code to include relevant Materialize links within html files to import libraries.
+7. **Materialize**: Developed code to include relevant Materialize links within html files to import library.
+8. **Font Awesome**: Develoepd code to include relevant Font Awesome links within html files to import library.
 8. **HTML files**: Developed HTML code to build structure of each web application page.
 9. **CSS file**: Developed CSS code to add own custom styling.
 10. **Commentary**: Developed commentary throughout to provide code guidance.

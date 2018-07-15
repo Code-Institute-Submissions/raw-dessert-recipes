@@ -2,10 +2,6 @@
 {% extends 'base.html'%} {% block content %}
 
 <div class="row">
-    <h4>Raw Dessert Recipes</h4>
-</div>
-
-<div class="row">
     <ul class="collapsible popout">
         <!-- 'Recipe' represents each mongoDB document in the collection and 'recipes' is the collection passed back. -->
         {% for recipe in recipes %}
@@ -44,10 +40,14 @@
             </div>
             <div class="collapsible-body">
                 <span>
-              <h6><strong>Author: </strong>{{recipe.author_name}}</h6> 
-            </span>
+              <h6><strong>Author: </strong>{{recipe.author_name}}
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fas fa-heart"style="color:red;"></i>&nbsp;&nbsp;Like Recipe</span>
+                </h6>
+                </span>
             </div>
         </li>
+        
         {% endfor %}
     </ul>
 </div>
