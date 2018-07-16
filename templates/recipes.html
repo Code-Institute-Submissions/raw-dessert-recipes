@@ -2,6 +2,23 @@
 {% extends 'base.html'%} {% block content %}
 
 <div class="row">
+    <h4>Raw Dessert Recipes</h4>
+    <h6><strong>Like and Share Website </strong>
+        <!-- Like button BEGIN. Code coped from https://likebtn.com/en/ -->
+        <span class="likebtn-wrapper" data-theme="custom" data-icon_l="hrt5" data-icon_l_c_v="#fb0547" data-identifier="item_1" data-dislike_enabled="false" data-counter_frmt="comma" data-popup_position="right" data-popup_style="dark"></span>
+        <script>
+            (function(d, e, s) { if (d.getElementById("likebtn_wjs")) return;
+                a = d.createElement(e);
+                m = d.getElementsByTagName(e)[0];
+                a.async = 1;
+                a.id = "likebtn_wjs";
+                a.src = s;
+                m.parentNode.insertBefore(a, m) })(document, "script", "//w.likebtn.com/js/w/widget.js");
+        </script>
+        <!-- Like button END -->
+</div>
+
+<div class="row">
     <ul class="collapsible popout">
         <!-- 'Recipe' represents each mongoDB document in the collection and 'recipes' is the collection passed back. -->
         {% for recipe in recipes %}
@@ -41,21 +58,6 @@
             <div class="collapsible-body">
                 <span>
               <h6><strong>Author&nbsp;&nbsp;</strong>{{recipe.author_name}}</h6>
-              <h6><strong>Like and Share Recipe&nbsp;&nbsp;</strong>
-                <!-- LikeBtn.com BEGIN, code from https://likebtn.com/en/ -->
-                <span class="likebtn-wrapper" data-theme="custom" data-btn_size="24" data-f_size="13" data-icon_l="hrt1" data-icon_d="thmb7-d" data-icon_l_c_v="#fb054f" data-icon_d_c_v="#121011" data-identifier="item_1" data-show_dislike_label="true" data-counter_clickable="true"></span>
-                <script>
-                    (function(d, e, s) {
-                        if (d.getElementById("likebtn_wjs")) return;
-                        a = d.createElement(e);
-                        m = d.getElementsByTagName(e)[0];
-                        a.async = 1;
-                        a.id = "likebtn_wjs";
-                        a.src = s;
-                        m.parentNode.insertBefore(a, m)
-                    })(document, "script", "//w.likebtn.com/js/w/widget.js");
-                </script>
-                <!-- LikeBtn.com END -->
             </div>
         </li>
         {% endfor %}
