@@ -29,7 +29,7 @@ A data-driven web application that allows users to easily access, add new and ed
 3. **Files & Folders**: Created in line with wireframe and developed as project progressed.
 4. **mLab**: Before building Cloud 9 code, first created the MongoDB database.
     * **New DB:** Created new database, selecting AWS Sandbox with 0.5GB free storage.
-    * **DB Schema:** Created new collection i.e. document, which represents a recipe. Within each document created key value pairs per wireframe, e.g. "recipe_title": "Raw Chocolate Buttons". Saved a couple of new recipes to link flask to whilst building project. Each new recipe created on the front end would then save as a document under collections,
+    * **DB Schema:** Created new collection i.e. document, which represents a recipe. Within each document created key value pairs per wireframe, e.g. "recipe_title": "Raw Chocolate Buttons". Saved a couple of new recipes to link flask to whilst building project. Each new recipe created on the front end would then save as a document under collections.
     * **User:** Create admin user and added relevant mongoDB code to app.py to connect application with database.
 5. **Flask**: Installed Flask via sudo pip3 install flask command.
 6. **App.py**: Developed code to run flask and added code throughout build to render html files in browser.
