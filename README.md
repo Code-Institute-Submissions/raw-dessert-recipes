@@ -133,7 +133,7 @@ The following is an overview of testing to ensure all functionality works as int
 
 
 Bugs
-Nav bar not highlighting when selecting page
+Nav bar not highlighting when selecting page - overwrote bootstrap nav tags with index.html, updated as per bootstrap template. 'active' class highlight nav menu item.
 
 
 
