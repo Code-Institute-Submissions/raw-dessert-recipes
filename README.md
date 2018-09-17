@@ -131,7 +131,6 @@ The following is an overview of testing to ensure all functionality works as int
     * **New Recipes**: User selects new recipes on the navbar to open the new recipe page. User inputs recipe details and selects add recipe button to add the recipe.
 
 
-
 Bugs
 Nav bar not highlighting when selecting page - overwrote bootstrap nav tags with index.html, updated as per bootstrap template. 'active' class highlight nav menu item.
 
@@ -207,6 +206,8 @@ The following section describes the process to deploy this project to Heroku.
 ## Credits
 
 ### Content
+
+About photo - https://www.pexels.com/search/chocolate/
 - The Recipies for this website were copied from [Recipies](http://rawfoodrecipes.com/).
 
 ### Media
