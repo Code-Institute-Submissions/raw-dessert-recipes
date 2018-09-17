@@ -78,7 +78,7 @@ Share details of how you created your database schema in your README. Consider s
 - [Cloud 9 IDE](https://aws.amazon.com/cloud9/)
     - The project used **Cloud 9**, online integrated development environment, to construct the code end to end.
 - [Bootstrap](https://getbootstrap.com/)
-    - This project uses **Bootstrap**, a library of website themes. The [Clean Blog Template](https://startbootstrap.com/template-overviews/clean-blog/), was used for this project.
+    - This project uses **Bootstrap**, a library of website themes. The [Business Casual Template](https://startbootstrap.com/template-overviews/business-casual/), was used for this project.
         - **Static folder**: Contains Bootstrap files ONLY (no other files stored within this folder).
         - **`base.html` and `contact.html`** - Boiler plate html was copied from the bootstrap `index.html` and `contact.html` files, then amended to suit this project.
         - **All Other Code**: Compiled by the project developer.
