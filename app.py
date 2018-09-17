@@ -11,22 +11,27 @@ mongo = PyMongo(app)
 
 @app.route('/')
 def index():
+    '''Routing view to render/call index.html in browser'''
     return render_template("index.html")
     
 @app.route('/about')
 def about():
+    '''Routing view to render/call about.html in browser'''
     return render_template("about.html")
  
 @app.route('/recipes')
 def recipes():
+    '''Routing view to render/call recipes.html in browser'''
     return render_template("recipes.html")
  
 @app.route('/addrecipes')
 def addrecipes():
+    '''Routing view to render/call addrecipes.html in browser'''
     return render_template("addrecipes.html") 
 
 @app.route('/contact')
 def contact():
+    '''Routing view to render/call contact.html in browser'''
     return render_template("contact.html")  
     
 if __name__ == '__main__':

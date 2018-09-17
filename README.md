@@ -131,6 +131,12 @@ The following is an overview of testing to ensure all functionality works as int
     * **New Recipes**: User selects new recipes on the navbar to open the new recipe page. User inputs recipe details and selects add recipe button to add the recipe.
 
 
+
+Bugs
+Nav bar not highlighting when selecting page
+
+
+
 1. **Navbar - Contact**:
     1. Select 'Contact' on the navbar and verify that the player is moved to the contact page.
     2. Complete all player details within the contact form and verify that all fields accept relevant inputs.

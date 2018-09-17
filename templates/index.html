@@ -39,21 +39,21 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+            <a class="nav-link text-uppercase text-expanded" href="{{ url_for('index') }}">Home
                 <span class="sr-only">(current)</span>
               </a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+            <a class="nav-link text-uppercase text-expanded" href="{{ url_for('about') }}">About</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="products.html">Recipies</a>
+            <a class="nav-link text-uppercase text-expanded" href="{{ url_for('recipes') }}">Recipies</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="store.html">Add Recipies</a>
+            <a class="nav-link text-uppercase text-expanded" href="{{ url_for('addrecipes') }}">Add Recipies</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="store.html">Contact</a>
+            <a class="nav-link text-uppercase text-expanded" href="{{ url_for('contact') }}">Contact</a>
           </li>
         </ul>
       </div>
