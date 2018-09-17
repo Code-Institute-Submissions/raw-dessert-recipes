@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+
+    <!-- Import Google Icon Font library. -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Import Font Awesome Library. -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <!-- Import Materialize CSS library. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Custom CSS. -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="black">
+            <div class="nav-wrapper">
+                <a href="{{url_for('get_recipes')}}" class="brand-logo">Raw Desserts</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="{{url_for('get_recipes')}}">Recipes</a></li>
+                    <li><a href="{{url_for('add_recipe')}}">New Recipes</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="{{url_for('get_recipes')}}">Recipes</a></li>
+                    <li><a href="{{url_for('add_recipe')}}">New Recipes</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Jinja parent template inheritance code. -->
+    <div class="container">
+        {% block content %} {% endblock %}
+    </div>
+
+    <!-- Import Materialize JS library. -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js "></script>
+
+    <!-- Initialization jQuery -->
+    <script type="text/javascript ">
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+            $(".button-collapse ").sideNav();
+        });
+        $('.datepicker').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 15, // Creates a dropdown of 15 years to control year,
+            today: 'Today',
+            clear: 'Clear',
+            close: 'Ok',
+            closeOnSelect: false // Close upon selecting a date,
+        });
+    </script>
+
+</body>
+
+</html>

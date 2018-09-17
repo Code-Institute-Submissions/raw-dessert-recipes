@@ -204,7 +204,7 @@ The following section describes the process to deploy this project to Heroku.
 - The Recipies for this website were copied from [Recipies](http://rawfoodrecipes.com/).
 
 ### Media
-- The photo used in this site was copied from [Background Photo]().
+- The video used in this site was copied from [Background Video](https://www.youtube.com/watch?v=1hQ6pJ6bPik).
 
 ### Acknowledgements
 - I received inspiration for this project from my interest in Health, [Materlize](https://materializecss.com/) and ongoing research online. I also used knowledge gained from the [Code Institute - Diploma in Software Development](https://www.codeinstitute.net/), [Stack Overflow](https://stackoverflow.com/) and [W3 Schools](https://www.w3schools.com/).
