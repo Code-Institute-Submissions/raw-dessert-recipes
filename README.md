@@ -44,6 +44,8 @@ The following section describes all the front-end features in this project.
 The following section describes all technologies and tools used to construct this project.
 
 
+Bootsnipp form - https://bootsnipp.com/snippets/featured/simple-contact-form
+
 1. **Cloud 9**: IDE `Integrated Development Environment` used to build project end to end.
 2. **Materialize**: A web design library created by Google. Used for styling and interactive design, e.g. Buttons, Forms, Icons.
 3. **mLab**: Cloud database service that hosts MongoDB databases. Used for creating and storing recipe data.
