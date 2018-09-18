@@ -207,7 +207,10 @@ The following section describes the process to deploy this project to Heroku.
 
 ### Content
 
-About photo - https://www.pexels.com/search/chocolate/
+- The background photo on all pages of this website was copied from [Background photo](https://www.freepik.es/foto-gratis/barras-de-chocolate-oscuro-con-granos-de-cacao-en-la-mesa-de-madera_2727781.htm).
+- The photo on the home text section of this website was copied from [Home photo](https://www.freepik.com/free-photo/fresh-chocolate-mini-cakes_2954822.htm#term=candy%20bowl&page=1&position=7).
+- The photo on the about text section of this website was copied from [About photo](https://www.pexels.com/search/chocolate/).
+- The health benefits text on the about text section of this website was copied from [About health benefits](https://www.webmd.com/diet/a-z/raw-foods-diet).
 - The Recipies for this website were copied from [Recipies](http://rawfoodrecipes.com/).
 
 ### Media
