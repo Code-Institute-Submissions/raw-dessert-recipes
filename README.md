@@ -56,7 +56,6 @@ Bootsnipp form - https://bootsnipp.com/snippets/featured/simple-contact-form
 8. **Git and GitHub**: Used for version control and to deploy a backup of the project.
 9. **Heroku**: Used to deploy and host the project.
 
-
 1. **Workspace**: Blank `Cloud 9` workspace created.
 2. **README.md**: Created with outline of the project. Developed and finalised as project progressed.
 3. **Files & Folders**: Created in line with wireframe and developed as project progressed.
@@ -73,9 +72,7 @@ Bootsnipp form - https://bootsnipp.com/snippets/featured/simple-contact-form
 10. **Commentary**: Developed commentary throughout to provide code guidance.
 11. **Cloud 9 Linux Terminal**: Used to backup project via incremental `git status, git add <file/s> (staging area), git commit -m "<commentary>"` commands.
 
-
 Share details of how you created your database schema in your README. Consider sharing working drafts or finalised versions of your database schema in a 'Database Schema' folder in your repo. Provide a link to this folder in your README.
-
 
 - [Cloud 9 IDE](https://aws.amazon.com/cloud9/)
     - The project used **Cloud 9**, online integrated development environment, to construct the code end to end.
