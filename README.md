@@ -1,8 +1,8 @@
-# Raw Dessert Recipies
+# Raw Dessert Recipes
 
 A data-driven web application that allows users to easily access, add new and edit recipes.
 
-This a raw dessert recipies website, built using **Flask**, a Python micro-framework. It is a data-driven application, and the target audience is any user who wants to easily access, add new and edit recipies.
+This a raw dessert Recipes website, built using **Flask**, a Python micro-framework. It is a data-driven application, and the target audience is any user who wants to easily access, add new and edit Recipes.
 
 ## UX
 The following section describes the UX process for this project.
@@ -206,11 +206,12 @@ The following section describes the process to deploy this project to Heroku.
 
 ### Content
 
-- The background photo on all pages of this website was copied from [Background photo](https://www.freepik.es/foto-gratis/barras-de-chocolate-oscuro-con-granos-de-cacao-en-la-mesa-de-madera_2727781.htm).
-- The photo on the home text section of this website was copied from [Home photo](https://www.freepik.com/free-photo/fresh-chocolate-mini-cakes_2954822.htm#term=candy%20bowl&page=1&position=7).
+- The background photo on all pages of this website was copied from [Background photo](https://image.freepik.com/foto-gratis/barras-de-chocolate-oscuro-con-granos-de-cacao-en-la-mesa-de-madera_23-2147873730.jpg).
+- The photo on the home text section of this website was copied from [Home photo](https://image.freepik.com/free-photo/fresh-chocolate-mini-cakes_23-2147896378.jpg).
 - The photo on the about text section of this website was copied from [About photo](https://www.pexels.com/search/chocolate/).
 - The health benefits text on the about text section of this website was copied from [About health benefits](https://www.webmd.com/diet/a-z/raw-foods-diet).
-- The Recipies for this website were copied from [Recipies](http://rawfoodrecipes.com/).
+- The photo on the recipes page of this website was copied from [Recipes photo](https://image.freepik.com/free-photo/melted-chocolate-bowl-and-crushed-bar-on-chopping-board-with-wooden-spoon_23-2147867190.jpg0).
+- The Recipes for this website were copied from [Recipes](http://rawfoodrecipes.com/).
 
 ### Media
 - The video used in this site was copied from [Background Video](https://www.youtube.com/watch?v=1hQ6pJ6bPik).
