@@ -23,6 +23,15 @@ def about():
 def recipes():
     '''Routing view to render/call recipes.html in browser'''
     return render_template("recipes.html")
+
+
+@app.route('/get_recipes')
+def get_recipes():
+    '''Routing view to render/call recipes.html in browser.'''
+    return render_template("recipes.html",
+    recipes=mongo.db.recipes.find())
+
+
  
 @app.route('/addrecipes')
 def addrecipes():

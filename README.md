@@ -189,6 +189,11 @@ Nav bar not highlighting when selecting page - overwrote bootstrap nav tags with
             - **Issue** - Bootstrap grid layout required changing.
             - **Fix** - Updated bootstrap `<div>` tags with various classes and styling within the `html files` and retested until application fully responsive on all device sizes.
 
+Bug
+Not Found - The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+
+
 ## Deployment
 The following section describes the process to deploy this project to Heroku.
 
@@ -212,6 +217,8 @@ The following section describes the process to deploy this project to Heroku.
 - The health benefits text on the about text section of this website was copied from [About health benefits](https://www.webmd.com/diet/a-z/raw-foods-diet).
 - The photo on the recipes page of this website was copied from [Recipes photo](https://image.freepik.com/free-photo/melted-chocolate-bowl-and-crushed-bar-on-chopping-board-with-wooden-spoon_23-2147867190.jpg0).
 - The Recipes for this website were copied from [Recipes](http://rawfoodrecipes.com/).
+- 
+- Card Title image: https://www.freepik.com/free-photo/melted-chocolate-bowl-and-crushed-bar-on-chopping-board-with-wooden-spoon_2698076.htm#term=chocolate&page=1&position=33
 
 ### Media
 - The video used in this site was copied from [Background Video](https://www.youtube.com/watch?v=1hQ6pJ6bPik).
