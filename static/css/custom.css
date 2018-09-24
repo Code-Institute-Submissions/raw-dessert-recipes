@@ -12,7 +12,7 @@
 
 .fa:hover {
   opacity: 0.7;
-  color:grey;
+  color: grey;
 }
 
 .fa-facebook {
@@ -25,4 +25,9 @@
 
 .fa-youtube {
   color: white;
+}
+
+button {
+  position: absolute;
+  bottom: 0;
 }

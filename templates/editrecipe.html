@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Raw Desserts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Bootstrap font awesome, used for footer social links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Bootstrap custom styles for this template -->
+    <link href="{{url_for('static', filename='css/business-casual.min.css')}}" rel="stylesheet">
+
+    <!-- Developer custom styles, used to override Bootstrap template CSS -->
+    <link href="{{url_for('static', filename='css/custom.css')}}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+        <span class="site-heading-upper text-primary mb-3">Eat Healthy. &nbsp Eat Wholefoods. &nbsp Eat Raw.</span>
+        <span class="site-heading-lower">Raw Dessert Recipes</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="{{ url_for('index') }}">Home
+                <span class="sr-only">(current)</span>
+              </a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="{{ url_for('about') }}">About</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="{{ url_for('get_recipes') }}">Recipes</a>
+                    </li>
+                    <li class="nav-item active px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="{{ url_for('add_recipe') }}">Add Recipes</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="{{ url_for('contact') }}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-section cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="cta-inner text-center rounded">
+                        <div class="col-md-12">
+                            <div class="form-area">
+                                <form action="{{ url_for('insert_recipe') }}" method="POST" role="form">
+                                    <br style="clear:both">
+                                    <h3 style="margin-bottom: 25px; text-align: center;">Add a New Recipe</h3>
+                                    <div class="input-field mb-2">
+                                        <input type="text" class="form-control" id="recipe_title" name="recipe_title" placeholder="Recipe Title" value="{{recipe.recipe_title}}">
+                                    </div>
+                                    <div class="input-field mb-2">
+                                        <textarea class="form-control" type="description" id="description" placeholder="Description" maxlength="140" rows="7"></textarea>
+                                    </div>
+                                    <div class="input-field mb-2">
+                                        <textarea class="form-control" type="ingredients" id="ingredients" placeholder="Ingredients" maxlength="140" rows="7"></textarea>
+                                    </div>
+                                    <div class="input-field mb-2">
+                                        <textarea class="form-control" type="instructions" id="instructions" placeholder="Instructions" maxlength="140" rows="7"></textarea>
+                                    </div>
+                                    <div class="input-field mb-2">
+                                        <input type="text" class="form-control" id="author_name" name="author_name" placeholder="Author Name" value="{{recipe.author_name}}">
+                                    </div>
+                                    <div class="input-field mb-2">
+                                        <input type="text" class="form-control" id="date_posted" name="date_posted" placeholder="Date Posted.   (DD, Month, YYYY. i.e. 12 January, 2018)" required>
+                                    </div>
+                                    <div class="mt-4" style="text-align: center">
+                                        <button class="btn btn-primary" type="submit" name="action">Add Recipe</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5">
+        <div class="container text-center">
+            <a href="#" target="_blank" class="fa fa-facebook"></a>
+            <a href="#" target="_blank" class="fa fa-twitter"></a>
+            <a href="#" target="_blank" class="fa fa-youtube"></a>
+        </div>
+
+        <div class="container">
+            <p class="m-0 small">Copyright &copy; Raw Dessert Recipes 2018</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+</body>
+
+</html>
