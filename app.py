@@ -25,10 +25,6 @@ def get_recipes():
     return render_template("recipes.html",
     recipes=mongo.db.recipes.find())
 
-
-
-
-
 @app.route("/view_recipe/<recipe_id>")
 def view_recipe(recipe_id):
     the_recipe=mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
@@ -45,6 +41,9 @@ def add_recipe():
     '''Routing view to render/call addrecipe.html in browser.'''
     return render_template('addrecipe.html')
     
+
+
+
 @app.route('/insert_recipe', methods=['POST'])
 def insert_recipe():
     '''Routing to add new recipe.'''
