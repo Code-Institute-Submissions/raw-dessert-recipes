@@ -19,19 +19,11 @@ def about():
     '''Routing view to render/call about.html in browser'''
     return render_template("about.html")
  
-@app.route('/recipes')
-def recipes():
-    '''Routing view to render/call recipes.html in browser'''
-    return render_template("recipes.html")
-
-
 @app.route('/get_recipes')
 def get_recipes():
     '''Routing view to render/call recipes.html in browser.'''
     return render_template("recipes.html",
     recipes=mongo.db.recipes.find())
-
-
  
 @app.route('/addrecipes')
 def addrecipes():
