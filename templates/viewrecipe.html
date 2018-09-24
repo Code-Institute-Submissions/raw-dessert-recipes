@@ -72,7 +72,8 @@
                 <div class="col-xl-9 mx-auto">
                     <div class="cta-inner text-center rounded">
                         <div class="col-md-12">
-                            <h2><span class="section-heading-upper"><strong>{{recipe.recipe_title}}</span></h2></strong>
+                            <h2><span class="section-heading-upper"><strong>{{recipe.recipe_title}}</span></h2>
+                            </strong>
                             <p class="mb-5">{{recipe.description}}</strong>
                                 <h3>Ingredients</h3>
                                 <p class="mb-4">{{recipe.ingredients}}</p>
@@ -81,8 +82,12 @@
                                 <p class="mb-4"><strong>Author: </strong>{{recipe.author_name}}</p>
                                 <p class="mb-4"><strong>Date Posted: </strong>{{recipe.date_posted}}</p>
                         </div>
-                        <a href="#" class="btn btn-success">Edit Recipe</a>
-                        <a href="#" class="btn btn-danger">Delete Forever</a>
+                        <div>
+                            <div class="col s3">
+                                <a href="{{url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-success mr-4">Update Recipe</a>
+                                <a href="{{url_for('delete_recipe', recipe_id=recipe._id)}}" class="btn btn-danger">Delete Forever</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
