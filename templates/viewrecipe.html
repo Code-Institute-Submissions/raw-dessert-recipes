@@ -66,24 +66,24 @@
         </div>
     </nav>
 
-    <section>
+
+
+    <section class="page-section cta">
         <div class="container">
             <div class="row">
-                <div class="card-group">
-                    {% for recipe in recipes %}
-                    <div class="col-md-4 mt-5 mb-5">
-                        <div class="card">
-                            <img class="img-fluid" src="https://image.freepik.com/free-photo/melted-chocolate-bowl-and-crushed-bar-on-chopping-board-with-wooden-spoon_23-2147867190.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title" style="text-align: center">{{recipe.recipe_title}}</h4>
-                                <p class="card-text">{{recipe.description}}</p>
-                                <div style="text-align: center">
-                                    <a href="{{url_for('view_recipe', recipe_id=recipe._id)}}" class="btn btn-primary">View Recipe</a>
-                                </div>
-                            </div>
+                <div class="col-xl-9 mx-auto">
+                    <div class="cta-inner text-center rounded">
+                        <div class="col-md-12">
+                            <h2><span class="section-heading-upper">{{recipe.recipe_title}}</span></h2>
+                            <p class="mb-5">{{recipe.description}}</strong>
+                            <h3>Ingredients</h3>
+                                <p class="mb-3">{{recipe.ingredients}}</p>
+                                <h3>Instructions</h3>
+                                <p class="mb-3">{{recipe.instructions}}</p>
+                                <p class="mb-3"><strong>Author: </strong>{{recipe.author_name}}</p>
+                                <p class="mb-3"><strong>Date Posted: </strong>{{recipe.date_posted}}</p>
                         </div>
                     </div>
-                    {% endfor %}
                 </div>
             </div>
         </div>

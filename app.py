@@ -18,17 +18,28 @@ def index():
 def about():
     '''Routing view to render/call about.html in browser'''
     return render_template("about.html")
-
-
-
-
  
 @app.route('/get_recipes')
 def get_recipes():
     '''Routing view to render/call recipes.html in browser.'''
     return render_template("recipes.html",
     recipes=mongo.db.recipes.find())
-    
+
+
+
+
+
+@app.route("/view_recipe/<recipe_id>")
+def view_recipe(recipe_id):
+    the_recipe=mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    all_categories=mongo.db.categories.find()
+    return render_template('viewrecipe.html', recipe=the_recipe, categories=all_categories)
+
+
+
+
+
+
 @app.route('/add_recipe')
 def add_recipe():
     '''Routing view to render/call addrecipe.html in browser.'''
@@ -68,10 +79,6 @@ def delete_recipe(recipe_id):
     mongo.db.recipes.remove({'_id': ObjectId(recipe_id)})
     return redirect(url_for('get_recipes'))
     
-
-
-
-
 @app.route('/contact')
 def contact():
     '''Routing view to render/call contact.html in browser'''

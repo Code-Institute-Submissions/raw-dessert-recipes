@@ -26,15 +26,3 @@
 .fa-youtube {
   color: white;
 }
-
-
-.template_faq {
-    background: #edf3fe none repeat scroll 0 0;
-}
-.panel-group {
-    background: #fff none repeat scroll 0 0;
-    border-radius: 3px;
-    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.04);
-    margin-bottom: 0;
-    padding: 30px;
-}
