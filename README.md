@@ -191,6 +191,8 @@ Nav bar not highlighting when selecting page - overwrote bootstrap nav tags with
 
 Bug
 Not Found - The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+When card recipe data populated from Mlab, cards not aligning horizonatally, but vertically. Added <div style="text-align: center">.
+No spacing between cards. Added bootstrap spacing class = mt-5 mb-5. OPEN = MAKE ALL CARDS SAME SIZE, NO MATTER WHAT TEXT IN DESCRIPTION.
 
 
 

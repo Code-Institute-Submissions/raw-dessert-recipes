@@ -66,30 +66,27 @@
         </div>
     </nav>
 
-    <section class="page-section cta">
-        {% for recipe in recipes %}
+    <section>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <!--Card-->
-                    <div class="card">
-                        <!--Card image-->
-                        <img class="img-fluid" src="https://image.freepik.com/free-photo/melted-chocolate-bowl-and-crushed-bar-on-chopping-board-with-wooden-spoon_23-2147867190.jpg" alt="Card image cap">
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title">{{recipe.recipe_title}}</h4>
-                            <!--Text-->
-                            <p class="card-text">Recipe Description.</p>
-                            <a href="#" class="btn btn-primary">View Recipe</a>
+                <div class="card-group">
+                    {% for recipe in recipes %}
+                    <div class="col-md-4 mt-5 mb-5">
+                        <div class="card">
+                            <img class="img-fluid" src="https://image.freepik.com/free-photo/melted-chocolate-bowl-and-crushed-bar-on-chopping-board-with-wooden-spoon_23-2147867190.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title" style="text-align: center">{{recipe.recipe_title}}</h4>
+                                <p class="card-text">{{recipe.description}}</p>
+                                <div style="text-align: center">
+                                    <a href="#" class="btn btn-primary">View Recipe</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
-        {% endfor %}
-        <!--/.Card-->
     </section>
 
     <footer class="footer text-faded text-center py-5">
