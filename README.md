@@ -194,8 +194,7 @@ Not Found - The requested URL was not found on the server. If you entered the UR
 When card recipe data populated from Mlab, cards not aligning horizonatally, but vertically. Added <div style="text-align: center">.
 No spacing between cards. Added bootstrap spacing class = mt-5 mb-5. OPEN = MAKE ALL CARDS SAME SIZE, NO MATTER WHAT TEXT IN DESCRIPTION.
 Cards not all same height. Added 'd-flex align-items-stretch' to div.
-Card buttons - not in card footer. OPEN BUG.
-
+Card buttons - displaying randomly and not at bottom of cards. Moved <a href="{{url_for('view_recipe', recipe_id=recipe._id)}}" class="btn btn-primary">View Recipe</a> down a div.
 
 
 ## Deployment
