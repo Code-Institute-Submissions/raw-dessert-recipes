@@ -104,6 +104,11 @@ Share details of how you created your database schema in your README. Consider s
 - [All Other Technologies](https://startbootstrap.com/template-overviews/clean-blog/)
     - All other technologies within this project were included with the Bootstrap template.
 
+
+
+Share details of how you created your database schema in your README. Consider sharing working drafts or finalised versions of your database schema in a 'Database Schema' folder in your repo. Provide a link to this folder in your README.
+
+
 ## Testing
 The following is an overview of testing to ensure all functionality works as intended in this project.
 
