@@ -73,7 +73,7 @@ def insert_recipe():
 @app.route('/contact')
 def contact():
     '''Routing view to render/call contact.html in browser'''
-    return render_template("contact.html")  
+    return render_template("contact.html")
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

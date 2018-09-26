@@ -65,52 +65,52 @@
         </div>
     </nav>
 
-
     <section class="page-section cta">
         <div class="container">
             <div class="row">
                 <div class="col-xl-9 mx-auto">
-                    <div class="cta-inner rounded">
+                    <div class="cta-inner text-center rounded">
                         <div class="col-md-12">
                             <div class="form-area">
-                                <form role="form">
+                                <h3 style="margin-bottom: 25px; text-align: center;">Edit Recipe</h3>
+                                <form action="{{ url_for('insert_recipe') }}" method="POST" role="form">
                                     <br style="clear:both">
-                                    <form action="{{ url_for('insert_recipe') }}" method="POST" role="form">
-                                        <h3 style="margin-bottom: 25px; text-align: center;">Edit Recipe</h3>
-                                        <div class="input-field mb-2">
-                                            <label for="method">Recipe Title</label>
-                                            <input type="text" class="form-control" id="recipe_title" name="recipe_title" placeholder="Recipe Title" value="{{recipe.recipe_title}}">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="method">Description</label>
-                                            <textarea id="description" name="description" type="text" class="form-control" rows="6">{{recipe.description}}</textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="method">Ingredients</label>
-                                            <textarea id="ingredients" name="ingredients" type="text" class="form-control" rows="6">{{recipe.ingredients}}</textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="method">Instructions</label>
-                                            <textarea id="instructions" name="instructions" type="text" class="form-control" rows="6">{{recipe.instructions}}</textarea>
-                                        </div>
-                                        <div class="input-field mb-2">
-                                            <label for="method">Author</label>
-                                            <input type="text" class="form-control" id="author_name" name="author_name" placeholder="Author Name" value="{{recipe.author_name}}">
-                                        </div>
-                                        <div class="input-field mb-2">
-                                            <label for="method">Date Posted</label>
-                                            <input type="text" class="form-control" id="date_posted" name="date_posted" placeholder="Date Posted.   (DD, Month, YYYY. i.e. 12 January, 2018)">
-                                        </div>
-                                        <div style="text-align: center;">
-                                            <button type="submit" name="action" class="btn btn-success">Edit Recipe</button>
-                                        </div>
-                                    </form>
+                                    <div class="form-group fg text-left">
+                                        <form action="{{ url_for('insert_recipe') }}" method="POST" role="form">
+                                            <div class="input-field mb-2">
+                                                <label for="method">Recipe Title</label>
+                                                <input type="text" class="form-control" id="recipe_title" name="recipe_title" value="{{recipe.recipe_title}}">
+                                            </div>
+                                            <div class="form-group mb-1">
+                                                <label for="method">Description</label>
+                                                <textarea id="description" name="description" type="text" class="form-control" rows="6">{{recipe.description}}</textarea>
+                                            </div>
+                                            <div class="form-group mb-1">
+                                                <label for="method">Ingredients</label>
+                                                <textarea id="ingredients" name="ingredients" type="text" class="form-control" rows="6">{{recipe.ingredients}}</textarea>
+                                            </div>
+                                            <div class="form-group mb-1">
+                                                <label for="method">Instructions</label>
+                                                <textarea id="instructions" name="instructions" type="text" class="form-control" rows="6">{{recipe.instructions}}</textarea>
+                                            </div>
+                                            <div class="input-field mb-1">
+                                                <label for="method">Author</label>
+                                                <input type="text" class="form-control" id="author_name" name="author_name" placeholder="Author Name" value="{{recipe.author_name}}">
+                                            </div>
+                                            <div class="input-field mb-1">
+                                                <label for="method">Date Posted</label>
+                                                <input type="text" class="form-control" id="date_posted" name="date_posted" placeholder="Date Posted.   (DD, Month, YYYY. i.e. 12 January, 2018)">
+                                            </div>
+                                            <div style="text-align: center;">
+                                                <button type="submit" name="action" class="btn btn-primary">Edit Recipe</button>
+                                            </div>
+                                        </form>
+                                    </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <footer class="footer text-faded text-center py-5">

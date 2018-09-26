@@ -72,26 +72,33 @@
                     <div class="cta-inner text-center rounded">
                         <div class="col-md-12">
                             <div class="form-area">
+                                <h3 style="margin-bottom: 25px; text-align: center;">Add a New Recipe</h3>
                                 <form action="{{ url_for('insert_recipe') }}" method="POST" role="form">
                                     <br style="clear:both">
-                                    <h3 style="margin-bottom: 25px; text-align: center;">Add a New Recipe</h3>
-                                    <div class="input-field mb-2">
-                                        <input type="text" class="form-control" id="recipe_title" name="recipe_title" placeholder="Recipe Title" required>
+                                    <div class="form-group fg text-left">
+                                        <label for="recipe_title">Recipe Title</label>
+                                        <input type="text" class="form-control" id="recipe_title" name="recipe_title" required>
                                     </div>
-                                    <div class="input-field mb-2">
-                                        <textarea class="form-control" type="description" id="description" placeholder="Description" maxlength="140" rows="7"></textarea>
+                                    <div class="form-group fg text-left">
+                                        <label for="description">Description</label>
+                                        <textarea id="description" name="description" type="text" class="form-control"></textarea>
                                     </div>
-                                    <div class="input-field mb-2">
-                                        <textarea class="form-control" type="ingredients" id="ingredients" placeholder="Ingredients" maxlength="140" rows="7"></textarea>
+                                    <div class="form-group fg text-left">
+                                        <label for="ingredients">Ingredients</label>
+                                        <textarea id="ingredients" name="ingredients" type="text" class="form-control"></textarea>
                                     </div>
-                                    <div class="input-field mb-2">
-                                        <textarea class="form-control" type="instructions" id="instructions" placeholder="Instructions" maxlength="140" rows="7"></textarea>
+
+                                    <div class="form-group fg text-left">
+                                        <label for="instructions">Instructions</label>
+                                        <textarea id="instructions" name="instructions" type="text" class="form-control"></textarea>
                                     </div>
-                                    <div class="input-field mb-2">
-                                        <input type="text" class="form-control" id="author_name" name="author_name" placeholder="Author Name" required>
+                                    <div class="form-group fg text-left">
+                                        <label for="description">Author Name</label>
+                                        <input type="text" class="form-control" id="author_name" name="author_name" required>
                                     </div>
-                                    <div class="input-field mb-2">
-                                        <input type="text" class="form-control" id="date_posted" name="date_posted" placeholder="Date Posted   (DD, Month, YYYY. i.e. 12 January, 2018)" required>
+                                    <div class="form-group fg text-left">
+                                        <label for="description">Date Posted</label>
+                                        <input type="text" class="form-control" id="date_posted" name="date_posted" placeholder="DD, Month, YYYY. i.e. 12 January, 2018" required>
                                     </div>
                                     <div class="mt-4" style="text-align: center">
                                         <button class="btn btn-primary" type="submit" name="action">Add Recipe</button>
