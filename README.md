@@ -40,6 +40,19 @@ The following section describes all the front-end features in this project.
 1. **Leader board** - Add a feature to include a scoring system that ranks all players.
 2. **Incorrect Answers - Show Riddle or Riddle Number** - Consider adding a feature to indicate which incorrect answer is related to which riddle but ensure not to make the game too simple for players.
 
+
+Add a separate page showing the different recipie Authors.
+Display as lists (<ul> or <ol>) of items: Splitting the user input by line (e.g. with python's .splitlines() ) & displaying it in the template with a separate <li> for each line.
+Blog
+Image: Add features to have image related to recipe.
+DAtepicker
+Views
+Upvotes
+Prep Time
+Country of Origin
+
+
+
 ## Technologies Used
 The following section describes all technologies and tools used to construct this project.
 
