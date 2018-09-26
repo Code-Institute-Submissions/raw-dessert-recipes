@@ -70,14 +70,14 @@
             <div class="row">
                 <div class="card-group">
                     {% for recipe in recipes %}
-                    <div class="col-md-4 mt-5 mb-5 d-flex align-items-stretch">
+                    <div class="col-md-4 mt-2 mb-2 d-flex align-items-stretch">
                         <div class="card">
                             <img class="img-fluid" src="https://image.freepik.com/free-photo/melted-chocolate-bowl-and-crushed-bar-on-chopping-board-with-wooden-spoon_23-2147867190.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h4 class="card-title" style="text-align: center">{{recipe.recipe_title}}</h4>
+                                <h5 class="card-title" style="text-align: center"><strong>{{recipe.recipe_title}}</h5></strong>
                                 <p class="card-text">{{recipe.description}}</p>
                             </div>
-                            <a href="{{url_for('view_recipe', recipe_id=recipe._id)}}" class="btn btn-warning">View Recipe</a>
+                            <a href="{{url_for('view_recipe', recipe_id=recipe._id)}}" class="btn btn-primary">View Recipe</a>
                         </div>
                     </div>
                     {% endfor %}

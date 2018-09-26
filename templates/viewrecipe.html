@@ -81,11 +81,9 @@
                                 <p class="mb-4"><strong>Author: </strong>{{recipe.author_name}}</p>
                                 <p class="mb-4"><strong>Date Posted: </strong>{{recipe.date_posted}}</p>
                         </div>
-                        <div>
-                            <div class="col s3">
-                                <a href="{{url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-success mr-4">Update Recipe</a>
-                                <a href="{{url_for('delete_recipe', recipe_id=recipe._id)}}" class="btn btn-danger">Delete Forever</a>
-                            </div>
+                        <div class="col s3">
+                            <a href="{{url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-success mr-4">Edit Recipe</a>
+                            <a href="{{url_for('delete_recipe', recipe_id=recipe._id)}}" class="btn btn-danger">Delete Forever</a>
                         </div>
                     </div>
                 </div>
