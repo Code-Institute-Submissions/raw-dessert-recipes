@@ -101,7 +101,7 @@
                                         <input type="text" class="form-control" id="date_posted" name="date_posted" placeholder="DD, Month, YYYY. i.e. 12 January, 2018" required>
                                     </div>
                                     <div class="mt-4" style="text-align: center">
-                                        <button class="btn btn-primary" type="submit" name="action">Add Recipe</button>
+                                        <button onclick="addRecipe()" class="btn btn-primary" type="submit" name="action">Add Recipe</button>
                                     </div>
                                 </form>
                             </div>
@@ -111,21 +111,24 @@
             </div>
     </section>
 
-    <footer class="footer text-faded text-center py-5">
-        <div class="container text-center">
-            <a href="#" target="_blank" class="fa fa-facebook"></a>
-            <a href="#" target="_blank" class="fa fa-twitter"></a>
-            <a href="#" target="_blank" class="fa fa-youtube"></a>
-        </div>
+<footer class="footer text-faded text-center py-5">
+    <div class="container text-center">
+        <a href="#" target="_blank" class="fa fa-facebook"></a>
+        <a href="#" target="_blank" class="fa fa-twitter"></a>
+        <a href="#" target="_blank" class="fa fa-youtube"></a>
+    </div>
 
-        <div class="container">
-            <p class="m-0 small">Copyright &copy; Raw Dessert Recipes 2018</p>
-        </div>
-    </footer>
+    <div class="container">
+        <p class="m-0 small">Copyright &copy; Raw Dessert Recipes 2018</p>
+    </div>
+</footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+<script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+<!-- Developer custom JavaScript -->
+<script src="{{url_for('static', filename='js/custom.js')}}"></script>
 
 </body>
 
