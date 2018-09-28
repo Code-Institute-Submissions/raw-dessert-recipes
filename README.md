@@ -8,12 +8,11 @@ The following section describes the UX process for this project.
 #### UX Process
 1. **Layout** - Reviewed the Code Institute learnings to date and Bootstrap themes to extract design ideas.
 2. **Player Stories** - Walked through player stories.
-    1. **Navbar - Home** - As a player, I want to view a homepage and understand the health benefits of raw desserts.
-    2. **Navbar - About** - As a player, I want to be able to contact the developers to offer feedback and suggestions.
-    3. **Navbar - Recipes** - As a player, I want to be able to, go to the landing page from anywhere, and be presented with a blank player name textarea.
-    4. **Navbar - Add Recipes** - As a player, I want to be able to restart the game from anywhere and be presented with a blank player name textarea.
-    5. **Navbar - Contact** - As a player, I want to be able to enter a player name into a textarea and start the game.
-    6. **Footer - Social Links** - As a player, once I select start game, I want to be greeted with my player name, to be presented with the first riddle and view player names in a list.
+    1. **Navbar - Home** - As a player, I want to view a home page and understand the health benefits of raw desserts.
+    2. **Navbar - Recipes** - As a player, I want to be able to, go to the landing page from anywhere, and be presented with a blank player name textarea.
+    3. **Navbar - New Recipes** - As a player, I want to be able to restart the game from anywhere and be presented with a blank player name textarea.
+    4. **Navbar - Contact** - As a player, I want to be able to enter a player name into a textarea and start the game.
+    5. **Footer - Social Links** - As a player, once I select start game, I want to be greeted with my player name, to be presented with the first riddle and view player names in a list.
 3. **Wireframe** - Sketched the wireframe on paper, to include the features for each player story.
 
 ## Features
@@ -44,6 +43,7 @@ Views
 Upvotes
 Prep Time
 Search, Pagination, Sort, Filter: Add as website database grows.
+Contact - Wire up to an email...
 
 
 ## Technologies Used

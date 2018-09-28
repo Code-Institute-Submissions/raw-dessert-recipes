@@ -52,7 +52,7 @@
                         <a class="nav-link text-uppercase text-expanded" href="{{ url_for('get_recipes') }}">Recipes</a>
                     </li>
                     <li class="nav-item px-lg-4">
-                        <a class="nav-link text-uppercase text-expanded" href="{{ url_for('add_recipe') }}">Add Recipes</a>
+                        <a class="nav-link text-uppercase text-expanded" href="{{ url_for('add_recipe') }}">New Recipes</a>
                     </li>
                     <li class="nav-item px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{{ url_for('contact') }}">Contact</a>
@@ -69,7 +69,7 @@
                     <div class="cta-inner text-center rounded">
                         <div class="col-md-12">
                             <div class="form-area">
-                                <h3 style="margin-bottom: 25px; text-align: center;">Edit Recipe</h3>
+                                <h3 style="margin-bottom: 25px; text-align: center;">Update Recipe</h3>
                                 <form action="{{ url_for('insert_recipe') }}" method="POST" role="form">
                                     <br style="clear:both">
                                     <div class="form-group fg text-left">
@@ -99,7 +99,7 @@
                                                 <input type="text" class="form-control" id="date_posted" name="date_posted" placeholder="Date Posted.   (DD, Month, YYYY. i.e. 12 January, 2018)">
                                             </div>
                                             <div style="text-align: center;">
-                                                <button onclick="editRecipe()" type="submit" name="action" class="btn btn-primary">Edit Recipe</button>
+                                                <button onclick="editRecipe()" type="submit" name="action" class="btn btn-primary">Update Recipe</button>
                                             </div>
                                         </form>
                                     </div>

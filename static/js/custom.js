@@ -3,7 +3,7 @@ function addRecipe() {
 }
 
 function editRecipe() {
-    alert("Are you sure you're ready to add this new recipe? Don't forget to delete the old version of this recipe!");
+    alert("Are you sure you're ready to add a new version of this recipe? Don't forget to delete the old version!");
 }
 
 function deleteRecipe() {
