@@ -1,4 +1,6 @@
-/* Styling for social links within footer */
+/* This is a custom CSS file, written by the developer. */
+
+/* Styling for social links within footer. */
 
 .fa {
   padding: 15px;
@@ -27,6 +29,8 @@
   color: white;
 }
 
+
+/* Styling for button spacing. */
 button {
   margin-top: 15px;
 }

@@ -32,21 +32,21 @@ def view_recipe(recipe_id):
 
 @app.route('/delete_recipe/<recipe_id>')
 def delete_recipe(recipe_id):
-    '''Routing to delete recipe when user selects delete button'''
+    '''Routing to delete recipe when user selects the delete forever button'''
     mongo.db.recipes.remove({'_id': ObjectId(recipe_id)})
     return redirect(url_for('get_recipes'))
 
 
 @app.route('/edit_recipe/<recipe_id>')
 def edit_recipe(recipe_id):
-    '''Routing to edit recipe when user selects edit button.'''
+    '''Routing to edit recipe when user selects the update recipe button.'''
     the_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template('editrecipe.html', recipe=the_recipe)
 
 
 @app.route('/update_recipe/<recipe_id>', methods=["POST"])
 def update_recipe(recipe_id):
-    '''Routing to include recipe prior data within edit view.'''
+    '''Routing to include recipes prior data within update recipe view.'''
     recipes = mongo.db.recipes
     recipes.update({'_id': ObjectId(recipe_id)},
     {
@@ -68,7 +68,7 @@ def add_recipe():
 
 @app.route('/insert_recipe', methods=['POST'])
 def insert_recipe():
-    '''Routing to add new recipe.'''
+    '''Routing to add a new recipe.'''
     recipes = mongo.db.recipes
     recipes.insert_one(request.form.to_dict())
     return redirect(url_for('get_recipes'))
