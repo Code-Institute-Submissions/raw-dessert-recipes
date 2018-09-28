@@ -1,24 +1,19 @@
 # Raw Dessert Recipes
 
-A data-driven web application that allows users to easily access, add new and edit recipes.
-
-This a raw dessert Recipes website, built using **Flask**, a Python micro-framework. It is a data-driven application, and the target audience is any user who wants to easily access, add new and edit Recipes.
+This a Raw Dessert Recipes website, built using **Flask**, a Python micro-framework. This is a data-driven application, and the target audience is any user who would like to easily access, add new, edit and delete recipes.
 
 ## UX
 The following section describes the UX process for this project.
 
 #### UX Process
 1. **Layout** - Reviewed the Code Institute learnings to date and Bootstrap themes to extract design ideas.
-2. **player Stories** - Walked through player stories.
-    1. **Header Call-to-action** - As a player, I want to understand the purpose of this website and intuitively understand how to use it.
-    2. **Navbar - Contact** - As a player, I want to be able to contact the developers to offer feedback and suggestions.
-    3. **Navbar - Riddle Game** - As a player, I want to be able to, go to the landing page from anywhere, and be presented with a blank player name textarea.
-    4. **Navbar - Game** - As a player, I want to be able to restart the game from anywhere and be presented with a blank player name textarea.
-    5. **Enter Player Name** - As a player, I want to be able to enter a player name into a textarea and start the game.
-    6. **Start Game** - As a player, once I select start game, I want to be greeted with my player name, to be presented with the first riddle and view player names in a list.
-    7. **Enter Correct Answer** - As a player, I want to be able to enter an answer into a blank textarea, submit an answer and if I provide the correct answer, be redirected to the next riddle.
-    8. **Enter Incorrect Answer** - As a player, I want to be able to enter an answer into a blank textarea, submit an answer and if I provide an incorrect answer, I am redirected to a blank textarea to guess again, with answers are displayed in a list.
-    9. **Answer all Riddles Correctly** - As a player, when I have answered all riddles correctly, I want to be redirected to an end of game message.
+2. **Player Stories** - Walked through player stories.
+    1. **Navbar - Home** - As a player, I want to view a homepage and understand the health benefits of raw desserts.
+    2. **Navbar - About** - As a player, I want to be able to contact the developers to offer feedback and suggestions.
+    3. **Navbar - Recipes** - As a player, I want to be able to, go to the landing page from anywhere, and be presented with a blank player name textarea.
+    4. **Navbar - Add Recipes** - As a player, I want to be able to restart the game from anywhere and be presented with a blank player name textarea.
+    5. **Navbar - Contact** - As a player, I want to be able to enter a player name into a textarea and start the game.
+    6. **Footer - Social Links** - As a player, once I select start game, I want to be greeted with my player name, to be presented with the first riddle and view player names in a list.
 3. **Wireframe** - Sketched the wireframe on paper, to include the features for each player story.
 
 ## Features
@@ -40,17 +35,15 @@ The following section describes all the front-end features in this project.
 1. **Leader board** - Add a feature to include a scoring system that ranks all players.
 2. **Incorrect Answers - Show Riddle or Riddle Number** - Consider adding a feature to indicate which incorrect answer is related to which riddle but ensure not to make the game too simple for players.
 
-
 Add a separate page showing the different recipie Authors.
 Display as lists (<ul> or <ol>) of items: Splitting the user input by line (e.g. with python's .splitlines() ) & displaying it in the template with a separate <li> for each line.
 Blog
 Image: Add features to have image related to recipe.
-DAtepicker
+Datepicker
 Views
 Upvotes
 Prep Time
-Country of Origin
-
+Search, Pagination, Sort, Filter: Add as website database grows.
 
 
 ## Technologies Used
