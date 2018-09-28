@@ -16,12 +16,6 @@ def index():
     return render_template("index.html")
 
 
-@app.route('/about')
-def about():
-    '''Routing view to render/call about.html in browser'''
-    return render_template("about.html")
-
-
 @app.route('/get_recipes')
 def get_recipes():
     '''Routing view to render/call recipes.html in browser.'''
