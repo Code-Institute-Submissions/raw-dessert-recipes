@@ -160,5 +160,5 @@ The following section describes the process to deploy this project to Heroku.
 - The Recipes for this website were copied from [Recipes](http://rawfoodrecipes.com/).
 
 ### Acknowledgements
-- I received inspiration for this project from my interest with using food for health, reading books, online videos and experience. [Mark Sisson](https://www.marksdailyapple.com/) a Paelo and Ketogenic expert, has in particular commenced my interest in food for health.
+- I received inspiration for this project from my personal interest in food for health. [Mark Sisson](https://www.marksdailyapple.com/) a Paelo and Ketogenic expert, has in particular commenced my interest in food for health.
 - For the technical skills used in this project, I harnessed the knowledge gained from the [Code Institute - Diploma in Software Development](https://www.codeinstitute.net/), [Stack Overflow](https://stackoverflow.com/), [W3 Schools](https://www.w3schools.com/), [Bootstrap](http://getbootstrap.com/) and [Bootsnipp](https://bootsnipp.com/).
