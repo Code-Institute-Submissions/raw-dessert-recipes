@@ -156,7 +156,7 @@ The following section describes the process to deploy this project to Heroku.
 - The background photo on all pages of this website was copied from [Background photo](https://image.freepik.com/foto-gratis/barras-de-chocolate-oscuro-con-granos-de-cacao-en-la-mesa-de-madera_23-2147873730.jpg).
 - The photo on the home text section of this website was copied from [Home photo](https://image.freepik.com/free-photo/fresh-chocolate-mini-cakes_23-2147896378.jpg).
 - The health benefits text on the home page text section of this website was copied from [About health benefits](https://www.webmd.com/diet/a-z/raw-foods-diet).
-- The photo on the recipes page of this website was copied from [Recipes photo](https://image.freepik.com/free-photo/melted-chocolate-bowl-and-crushed-bar-on-chopping-board-with-wooden-spoon_23-2147867190.jpg0).
+- The photo on the recipes page of this website was copied from [Recipes photo](https://image.freepik.com/free-photo/melted-chocolate-bowl-and-crushed-bar-on-chopping-board-with-wooden-spoon_23-2147867190.jpg).
 - The Recipes for this website were copied from [Recipes](http://rawfoodrecipes.com/).
 
 ### Acknowledgements
