@@ -1,6 +1,6 @@
 # Raw Dessert Recipes
 
-This a Raw Dessert Recipes website, built using **Flask**, a Python micro-framework. This is a data-driven application, and the target audience is any user who would like to easily access, add new, update and delete recipes.
+This is a Raw Dessert Recipes website, built using **Flask**, a Python micro-framework. It is a data-driven application, and the target audience is any user who would like to easily access, add new, update and delete recipes.
 
 ## UX
 The following section describes the UX process for this project.
@@ -139,7 +139,7 @@ The following is an overview of testing to ensure all functionality works as int
 The following section describes the process to deploy this project to Heroku.
 
 1. Ensure all required technologies are installed locally, as per the `requirements.txt`file.
-2. Via Linux Terminal, login to Heroku, using 'Heroku login' command. Input Heroku login details.
+2. Via Linux Terminal, login to Heroku, using 'heroku login' command. Input Heroku login details.
 2. Create new Heroku app, using 'heroku apps:create appname' command.
 3. Push project to Heroku, using 'push -u heroku master' command.
 4. Create scale, using 'heroku ps:scale web=1' command.
