@@ -1,3 +1,5 @@
+// This file was inluded with the Bootstrap Business Casual Template //
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var header = require('gulp-header');
