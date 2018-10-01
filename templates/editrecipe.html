@@ -1,4 +1,4 @@
-<!-- This html page was built using Bootstrap Casual html template, and developed to suit this project. -->
+<!-- This html page was built using Bootstrap Casual html template and developed to suit this project. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -100,10 +100,14 @@
                                             </div>
                                             <div class="input-field mb-1">
                                                 <label for="method">Date Posted</label>
-                                                <input type="text" class="form-control" id="date_posted" name="date_posted" placeholder="Date Posted.   (DD, Month, YYYY. i.e. 12 January, 2018)">
+                                                <input type="text" class="form-control" id="date_posted" name="date_posted" placeholder="Date Posted.   (DD, Month, YYYY. i.e. 12 January 2018)">
+                                            </div>
+                                            <div class="alert">
+                                                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                                                <strong>Important!</strong> Once Update Recipe is selected; a new recipe will be posted to the website. Don't forget to delete the old version of this recipe.
                                             </div>
                                             <div style="text-align: center;">
-                                                <button onclick="editRecipe()" type="submit" name="action" class="btn btn-primary">Update Recipe</button>
+                                                <button type="submit" name="action" class="btn btn-primary">Update Recipe</button>
                                             </div>
                                         </form>
                                     </div>
@@ -129,9 +133,6 @@
     <!-- Bootstrap core JavaScript. -->
     <script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-
-    <!-- Developer custom JavaScrip.t -->
-    <script src="{{url_for('static', filename='js/custom.js')}}"></script>
 
 </body>
 

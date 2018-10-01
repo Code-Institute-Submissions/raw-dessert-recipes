@@ -1,4 +1,4 @@
-<!-- This html page was built using Bootstrap Casual html template, and developed to suit this project. -->
+<!-- This html page was built using Bootstrap Casual html template and developed to suit this project. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -82,9 +82,13 @@
                                 <p class="mb-4"><strong>Author: </strong>{{recipe.author_name}}</p>
                                 <p class="mb-4"><strong>Date Posted: </strong>{{recipe.date_posted}}</p>
                         </div>
+                        <div class="alert">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            <strong>Important!</strong> Once Delete Forever is selected; this change cannot be undone.
+                        </div>
                         <div class="col s3">
                             <a href="{{url_for('edit_recipe', recipe_id=recipe._id)}}" class="btn btn-success mr-4">Update Recipe</a>
-                            <a href="{{url_for('delete_recipe', recipe_id=recipe._id)}}" class="btn btn-danger" onclick="javascript:alert('This receipe will now be deleted forever.')">Delete Forever</a>
+                            <a href="{{url_for('delete_recipe', recipe_id=recipe._id)}}" class="btn btn-dark">Delete Forever</a>
                         </div>
                     </div>
                 </div>

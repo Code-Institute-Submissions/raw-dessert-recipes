@@ -34,7 +34,6 @@ The following section describes all the front-end features in this project.
 5. **Datepicker** - Add a date picker into the 'Date Posted' field, to maintain the same date format throughout.
 6. **Search, Sort, Filter, Pagination** - Add these type of features to facilitate the recipe page as it grows.
 7. **Prep Time** - Add a feature to include prep time.
-8. **Javascript Alerts** - Update alert boxes with a close or x button, to allow user to go back to the same page prior to the alert box opening.
 
 ## Technologies Used
 The following section describes all technologies used to construct this project.
@@ -93,13 +92,18 @@ The following is an overview of testing to ensure all functionality works as int
     1. Select 'Recipes' on the navbar.
     2. Verify that 'Recipes' is highlighted on the navbar and that the user is moved to the recipes page.
     3. Verify that the page header, footer, social links and all recipes are displayed as intended.
-    4. Select 'View Recipe' and verify that all the recipe details are displayed as intended.
-    5. Select 'Update Recipe' and verify that a form is displayed, containing the recipe details, which can be updated and over-written.
-    6. Once the Recipe has been updated, select 'Update Recipe' and verify that an alert box appears. Select 'OK' on the alert box.
-    7. Verify that the user is brought to the recipes page and that the updated recipe is added.
-    8. Verify that the old recipe is still on the recipes page for the user to refer back to if required and for the user to delete once satisfied with their updated recipe.
-    9. Select 'View Recipe' on the newly updated/added recipe. Once recipes details are displayed, select 'Delete Forever'. Verify that an alert box appears.
-    10. Select 'OK' on the alert box. Verify that the user is brought to the recipe page and that the recipe is deleted.
+    4. Select 'View Recipe' and verify that the button is highlighted.
+    5. Verify that the user is brought to a new page and that all the recipe details are displayed as intended.
+    6. Select 'Update Recipe' and verify that the user is brough to a new page, where a form is displayed.
+    7. Verify that this form contains all of the recipe details, which can be updated and over-written.
+    8. Verify that a red alert box is displayed, guiding the user as intended.
+    9. Once the Recipe has been updated, select 'Update Recipe'.
+    10. Verify that the user is brought to the recipes page and that the updated recipe is added to this page.
+    11. Verify that the old recipe is still on the recipes page for the user to refer back to if required and for the user to delete once satisfied with their updated recipe.
+    12. Select 'View Recipe' on the newly updated/added recipe.
+    13. Verify that the user is brought to a new page and that the recipes details are displayed.
+    14. Verify that a red alert box is displayed, guiding the user as intended.
+    15. Select 'Delete Forever'. Verify that the user is brought to the recipe page and that the recipe is deleted.
         - **Bug 1** - Recipe cards not alignings vertically, design looks off.
             - **Issue** - The html `divs` require adjusting.
             - **Fix** - Added `<div style="text-align: center">`.
@@ -134,7 +138,8 @@ The following is an overview of testing to ensure all functionality works as int
 ## Deployment
 The following section describes the process to deploy this project to Heroku.
 
-1. Via Linux Terminal, login to Heroku, using 'Heroku login' command. Input Heroku login details.
+1. Ensure all required technologies are installed locally, as per the `requirements.txt`file.
+2. Via Linux Terminal, login to Heroku, using 'Heroku login' command. Input Heroku login details.
 2. Create new Heroku app, using 'heroku apps:create appname' command.
 3. Push project to Heroku, using 'push -u heroku master' command.
 4. Create scale, using 'heroku ps:scale web=1' command.
